@@ -1,9 +1,28 @@
-# Use this workspace to collaborate
 workspace:
   id: 70dfbd61-8534-4470-b778-8517c720326d
 
-# All resources in the `postman/` folder are automatically registered in Local View.
-# Point to additional files outside the `postman/` folder to register them individually. Example:
-#localResources:
-#  collections:
-#    - ../tests/E2E Test Collection/
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/(1)_.KSAHN: 48386858-0962eb40-8d13-4e21-ae25-ae83b1ede0ae
+    ../postman/collections/(5)_.T청소년안심팩: 48386858-e9edb579-889d-41c0-9932-26d57bd98aee
+    ../postman/collections/(3)_.BS.모바일가디언: 48386858-62525370-0b55-44bc-bd8f-e851bda15673
+    ../postman/collections/(9)_.eeg: 48386858-e2d0ef11-c350-413f-90be-69375a797a0c
+    ../postman/collections/(9)_.뉴트리메이트: 48386858-6599371a-4ae0-4560-bebe-ee4ddc5f43b6
+  environments:
+    ../postman/environments/6._IPV.environment.yaml: 48386858-12ca703b-e836-4d3f-b914-82d1cb81bfda
+    ../postman/environments/SCL-loc.environment.yaml: 48386858-29cb0e16-10c4-4077-a88d-6b66518b46c7
+    ../postman/environments/4._DDV (223.62.243.49).environment.yaml: 48386858-3a835a85-f755-428c-af02-9b998f89be8b
+    ../postman/environments/운영서버(정준).environment.yaml: 48386858-4591e403-3231-4037-ba2c-8d82b42b8970
+    ../postman/environments/SCL-run.environment.yaml: 48386858-50be64c5-dbea-4298-81f4-57f58e02b3a4
+    ../postman/environments/테스트 서버(정준).environment.yaml: 48386858-55a950c2-f4bf-4557-b2c7-e065c905ba3f
+    ../postman/environments/1._KUB 서초 IDC.environment.yaml: 48386858-82e02ef4-2996-4b32-abef-21bbfef0c3db
+    ../postman/environments/[RUN] 모바일가디언.environment.yaml: 48386858-a1af0bca-30f3-44e5-8b7e-6bb17b1899da
+    ../postman/environments/sms-100.environment.yaml: 48386858-b2985288-021d-4147-918e-9e416b7368d4
+    ../postman/environments/999._DDV - vpn-on.environment.yaml: 48386858-c405ed55-4c5a-4f22-ba4f-4cd67fd9ae6f
+    ../postman/environments/ntm.environment.yaml: 48386858-d5080065-9fea-4794-9a5e-d283cf689cb7
+    ../postman/environments/7._Run(BPV).environment.yaml: 48386858-e6c2d267-9cbf-4cc3-9267-334f4a92384c
+    ../postman/environments/0._LOCAL 테스트.environment.yaml: 48386858-f3fab031-d937-4eba-934b-caa9a6a0b90e
+  globals:
+    ../postman/globals/workspace.globals.yaml: deeaa510-155d-4862-8184-f2527c45cfc4
