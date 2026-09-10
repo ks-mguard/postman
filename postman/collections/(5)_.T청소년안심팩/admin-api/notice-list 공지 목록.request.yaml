@@ -1,0 +1,14 @@
+$kind: http-request
+name: notice/list 공지 목록
+url: "{{svr-https-adm-api}}/api/notice/list"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "searchCategory":"ansimpack_guardian",
+        "page":1,
+        "size":20
+    }
+settings: {}
+order: 1000

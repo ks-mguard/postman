@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{svr-https-admin-api}}/swagger-ui.html"
+method: GET
+headers:
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+    disabled: true
+queryParams:
+  - key: page
+    value: "1"
+    disabled: true
+  - key: size
+    value: "20"
+    disabled: true
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 12000

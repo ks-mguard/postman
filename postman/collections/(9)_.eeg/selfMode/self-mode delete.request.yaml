@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{url-api}}/api/v1/self-mode/delete"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        // 사용자별 선택한 모드의 데이터를 모두 지우고 초기화 , for ADMIN
+        "userNo": 3,
+        // rescue, sleep, shield
+        "mode": "shield"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 6000

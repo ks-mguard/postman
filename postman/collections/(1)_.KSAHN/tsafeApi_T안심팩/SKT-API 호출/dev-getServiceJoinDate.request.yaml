@@ -1,0 +1,26 @@
+$kind: http-request
+name: dev/getServiceJoinDate
+url: "{{svr-https-tsafe-api}}/v4/dev/getServiceJoinDate"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+body:
+  type: json
+  content: |
+    {
+        "phoneNumber": "01091931770",
+        "prodId" : "NA00004907"
+    }
+    /*
+        "phoneNumber": "01091931770"
+        "phoneNumber": "01047961770"
+        "phoneNumber": "01064064978"
+
+        "prodId" : "NA00004907"
+    */
+auth:
+  type: noauth
+settings: {}
+order: 6000

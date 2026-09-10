@@ -1,0 +1,55 @@
+$kind: http-request
+url: "{{url-api}}/api/v1/self-mode"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        // 모든 항목을 지우고 다시 넣는거라 일부 삭제할 경우 제외한 리스트만 다시 주시면 됩니다.
+        // -.rescue|sleep|shield
+        "mode":"shield",
+        "isRun":"Y",
+        
+        // -.rescue & shield mode
+        "isAllday":"N",
+
+        "shieldList":[
+            {
+                "name":"쉴드이름",
+                "startTime":"09:00",
+                "endTime":"18:00",
+                "isAllow":"N",
+                "image":"image_url",
+                "bcolor":"#122255",
+                "text":"차단 메시지",
+                // -.rescue & shield mode
+                "selfAppList":[
+                    {
+                        "mode":"shield",
+                        "packageName":"app3.pkg.com",
+                        "name":"앱이름s1",
+                        "isAllow":"N",
+                        "time":0
+                    },
+                    {
+                        "mode":"shield",
+                        "packageName":"app4.pkg.com",
+                        "name":"앱이름s2",
+                        "isAllow":"N",
+                        "time":0
+                    }
+                ]
+            }
+        ],
+
+        // 필수이나 empty[]이어도 되지만 해당 항목은 있어야 함.
+        "rescueList":[],
+        "sleepList":[]
+
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 3000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{url-was-api}}getAppConfig"
+method: POST
+headers:
+  phoneNumber: "01094988624"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: |-
+    {
+        "configKey":"LATEST_APP_VERSION_CODE"
+    }
+settings: {}
+order: 5000

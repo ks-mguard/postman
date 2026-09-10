@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{url-was-api}}getCenterInfo"
+method: POST
+headers:
+  phoneNumber: "01094988624"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  User-Agent: Mozilla/5.0 (Linux; Android 12; SM-S906N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.119 Mobile Safari/537.36
+body:
+  type: json
+  content: "{}"
+settings: {}
+order: 3000

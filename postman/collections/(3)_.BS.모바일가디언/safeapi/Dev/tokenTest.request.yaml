@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{url-was-api}}dev/tokenTest"
+method: GET
+headers:
+  Authorization: "{{accessToken}}"
+auth:
+  type: noauth
+settings: {}
+order: 2000

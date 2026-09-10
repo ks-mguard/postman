@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{url-was-api}}dev/apnsOld"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: |-
+    {
+    "token":"1A6A348C5EB5D44717DCF28DD86DF75B147A986EC1AAA35BE9A93B868D7E7EOF",
+    "pushAction":"RESPONSE_CHILD_LOCATION",
+    "pushActionStr":"자녀위치 보기 테스트 loc-old"
+    }
+settings: {}
+order: 15000

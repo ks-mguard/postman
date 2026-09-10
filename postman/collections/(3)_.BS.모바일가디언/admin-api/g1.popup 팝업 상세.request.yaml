@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{svr-BS-http-adm-api}}/api/popup"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "category":"ansimpack_guardian", 
+        "versionCode":"123"
+    }
+settings: {}
+order: 3000

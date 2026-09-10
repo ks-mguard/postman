@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{url-was-api-org}}rest/app-icon/202304/com.caracolu.alterego.png/72"
+method: GET
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: "{}"
+settings: {}
+order: 12000

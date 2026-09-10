@@ -1,0 +1,37 @@
+$kind: http-request
+url: "{{url-was-api}}userVerify"
+method: POST
+headers:
+  phoneNumber: "01094988624"
+body:
+  type: json
+  content: |-
+    /* 
+    process -> exception
+        1.  phoneNumber null -> "1102", "휴대폰 번호가 유효하지 않습니다."
+        2.  OAuth2 start     -> "3003", registrationId + " : 정상적인 인증이 아닙니다.\r\n" + e.getMessage()     
+                    DB:sns_users insert/update
+        3.  guardian         -> "1100", "이미 자녀로 사용중인 휴대폰 번호입니다."
+            child            -> "1001", "인증코드가 없습니다.\r\n다시 확인하고 입력해주시기 바랍니다." 
+                                "5001", "서비스 이용중인 부모가 없거나 인증코드가 일치하지 않습니다\r\n.
+                                         부모폰에 어플리케이션을 설치/인증코드 생성후 자녀모드 서비스를 사용하세요."
+        4.  guardian joinGuardian (seq, prod_id, phone_number, app_version_code, osType) 
+                    DB:guardian insert/update - unique_identifier 업데이트, 기존회원 & 번호변경시 반영
+            child joinChildren , 
+                    DB:child insert - unique_identifier 업데이트 , 기존회원 & 번호변경시 반영
+                    테스트번호 예외처리 . setBirthDate(2020-07-07), 
+                    DB:sns_map authCode update
+
+    header : 
+        phoneNumber , osType, prodId, appVersionCode, deviceTime ...
+
+    return : {"uniqueIdentifier" : "KAKAO_xxxx", "apiToken" : "", "seq" : 222}
+    */
+    {
+      "type" : "guardian",          // String : child, guardian
+      "authCode" : "",        // 자녀의 경우 부모 설치후 getAuthCode값을 추가
+      "registrationId" : "NAVER",   // String : GOOGLE, NAVER, KAKAO
+      "accessToken" : "AAAANwt4PtK63AxFArTCjGYK7ZTporIKUOokk0LIFJHBFF7YaHLAQmzh5DeonjFIATE4JG5Gd_eQi63x7hJ33Gw4D34" // SNS accessToken
+    }
+settings: {}
+order: 22000

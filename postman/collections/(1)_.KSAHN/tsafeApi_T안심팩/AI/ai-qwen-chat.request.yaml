@@ -1,0 +1,12 @@
+$kind: http-request
+name: ai/qwen/chat
+url: "{{svr-https-tsafe-api}}/ai/qwen/chat"
+method: POST
+body:
+  type: json
+  content: |
+    {
+        "prompt": "Java에서 단일 연결 리스트를 구현하는 기본 예제 코드를 만들어줘."
+    }
+settings: {}
+order: 1000

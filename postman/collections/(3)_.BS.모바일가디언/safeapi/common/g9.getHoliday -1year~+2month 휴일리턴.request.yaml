@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{url-was-api}}getHoliday"
+method: POST
+headers:
+  - key: prodId
+    value: ""
+    description: 유해차단 -> NA00004907
+body:
+  type: json
+  content: "{}"
+settings: {}
+order: 26000

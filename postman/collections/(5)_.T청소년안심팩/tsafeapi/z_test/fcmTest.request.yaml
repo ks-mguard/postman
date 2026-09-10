@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{url-was-api}}dev/firebaseSend"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: |-
+    {
+      "project" : "child",
+      "token" : "fDNuaFLzRi-Mo1b-oJPEjA:APA91bE8kH3RGMJv4phe0De3-ZeVavxBBkq0mhbFkjnAAVa7KC3trDvSUctevyx7mCtynOKKN1JWC-Lbk7zjqnD2SK5YtTn-QtRzr7EMIG-9j-5zDCeaDz3pQsszZNTGejScygyRvVBj",
+      "data" : {
+          "pushAction": "NOTICE_POPUP",
+          "message": "--test--"
+      },
+      "title" : "title--",
+      "body" : "body--"
+    }
+settings: {}
+order: 8000

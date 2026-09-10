@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{url-was-api}}dev/sslTest?domain=ngcp.nate.com&port=7002"
+method: GET
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+queryParams:
+  - key: domain
+    value: ngcp.nate.com
+    description: cspapi.sktelecom.com|ngcp.nate.com
+  - key: port
+    value: "7002"
+    description: 443|7002
+body:
+  type: json
+  content: ""
+settings: {}
+order: 17000

@@ -1,0 +1,19 @@
+$kind: http-request
+name: v4/getAgrees
+url: "{{svr-https-tsafe-api}}/v4/getAgrees"
+method: POST
+headers:
+  - key: prodId
+    value: NA00004907
+    description: 유해차단
+body:
+  type: json
+  content: |-
+    {
+        "type" : "child",
+        "version" : "2"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 9000

@@ -1,0 +1,19 @@
+$kind: http-request
+name: guardian/getLocationSafezone
+url: "{{svr-https-tsafe-api}}/v4/guardian/getLocationSafezone"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: ""
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : "113" // 14868
+    }
+auth:
+  type: noauth
+settings: {}
+order: 9000

@@ -1,0 +1,14 @@
+$kind: http-request
+name: "test: auth/sing-in"
+url: "{{url-api}}/api/v1/auth/sign-in"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        // for accessToken get
+        "id": "1004",
+        "password": "hanlimr1!"
+    }
+settings: {}
+order: 2000

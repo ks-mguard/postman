@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{svr-https-adm-api}}/harmful/"
+method: GET
+body:
+  type: json
+  content: |-
+    {
+    }
+settings: {}
+order: 4000

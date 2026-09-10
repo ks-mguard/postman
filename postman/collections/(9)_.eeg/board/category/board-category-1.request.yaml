@@ -1,0 +1,21 @@
+$kind: http-request
+name: board/category
+url: "{{url-api}}/api/v1/board/category"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        // for ADMIN
+        "categoryName": "aaaa",
+        "categoryDescription": "bbb",
+        "categoryImagePath": "",
+        "parentCategoryNo": 1,
+        "enabled": 1
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 2000

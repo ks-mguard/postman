@@ -1,0 +1,58 @@
+$kind: http-request
+url: "{{url-was-api}}sync/syncAll"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: "2222"
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "accessibilityActiveStatus" : 0,
+      "allBadMessageList" : [ ], 
+      "badMessageList" : [ ],
+      "allTroubleList" : [ ],
+      "troubleList" : [ ],
+      "appUsageLogSummaryList" : [ ],
+      
+      "managedAppList" : [ {
+        "allowStatus" : 0,
+        "appName" : "카메라",
+        "appVersionCode" : 20002000,
+        "childSeq" : 1,
+        "defaultAppStatus" : 0,
+        "deleteStatus" : 0,
+        "packageName" : "com.android.camera2",
+        "syncStatus" : 0
+      }, {
+        "allowStatus" : 0,
+        "appName" : "주소록",
+        "appVersionCode" : 10731,
+        "childSeq" : 1,
+        "defaultAppStatus" : 0,
+        "deleteStatus" : 0,
+        "packageName" : "com.android.contacts",
+        "syncStatus" : 0
+      }],
+      "userDefinedBadMessageList" : [ ],
+      "userDefinedKeywordVersion" : 0,
+      "userDefinedTroubleList" : [ ],
+
+      "badKeywordVersion" : 0,
+      "deviceAdminActiveStatus" : 0,
+      "lastAppLockScheduleUpdateDttm" : "2022-11-09T09:36:47.465+0900",
+      "lastManagedAppUpdateDttm" : "2022-11-09T09:36:47.465+0900",
+      "locationPermission" : 4,
+      "pushToken" : "fo2prE9pRqG8qlYfHk_cQe:APA91bHD0ks0TwEPD4-_LCkrCJi9IAeQUSz74GzPCoEovr9wEqlAGfVw6JyoYDfU9tImDY-5nPOb9p4rjfnHe3-9Zv1H2W1U4d9LTJZ9dY--218ydjpccJe4LDGgnUDjDvmjHHIZlxt0",
+      "selfLockEndTime" : 0,
+      "selfLockStartTime" : 0,
+      "storeType" : 2,
+      "syncOnDemand" : false,
+      "usageMonitorDate" : "20221109",
+      "usageMonitorUsingTimeWithoutDefaultApp" : 0,
+      "whiteKeywordVersion" : 0
+    }
+settings: {}
+order: 2000

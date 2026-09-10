@@ -1,0 +1,18 @@
+$kind: http-request
+name: api/notice
+url: "{{svr-https-admin-api}}/api/notice"
+method: POST
+headers:
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+    disabled: true
+body:
+  type: json
+  content: |-
+    {
+        "seq" : 3
+    }
+auth:
+  type: noauth
+settings: {}
+order: 4000

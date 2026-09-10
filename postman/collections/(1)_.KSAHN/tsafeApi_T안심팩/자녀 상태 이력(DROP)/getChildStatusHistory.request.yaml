@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{svr-https-tsafe-api}}/v4/guardian/getChildStatusHistory"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+body:
+  type: json
+  content: |-
+    {
+        "childSeq": 113,
+        "date": 1775008877851,
+        "lastIdx" : 0 ,
+        "limit" : 10        
+    }
+auth:
+  type: noauth
+settings: {}
+order: 3000

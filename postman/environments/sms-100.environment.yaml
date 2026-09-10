@@ -1,0 +1,24 @@
+name: sms-100
+color: null
+values:
+  - key: url-adm-web
+    value: http://1.227.148.14:8888
+    enabled: true
+  - key: url-adm-api
+    value: http://1.227.148.14:7777
+    enabled: true
+  - key: url-was-api
+    value: http://1.227.148.14:9999/tsafeApi/v4/
+    enabled: true
+  - key: childSeq
+    value: "1"
+    enabled: true
+  - key: guardianSeq
+    value: "2"
+    enabled: true
+  - key: childPhone
+    value: "01024228624"
+    enabled: true
+  - key: guardianPhone
+    value: "01094988624"
+    enabled: true

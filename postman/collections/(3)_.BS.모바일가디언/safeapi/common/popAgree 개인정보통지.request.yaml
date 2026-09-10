@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{url-was-api}}popAgree"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "category":"ansimpack_child"
+    }
+settings: {}
+order: 9000

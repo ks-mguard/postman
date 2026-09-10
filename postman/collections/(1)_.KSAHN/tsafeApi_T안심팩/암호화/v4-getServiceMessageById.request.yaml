@@ -1,0 +1,28 @@
+$kind: http-request
+name: v4/getServiceMessageById
+url: "{{svr-https-tsafe-api}}/v4/getServiceMessageById"
+method: POST
+headers:
+  - key: prodId
+    value: NA00004907
+    description: 유해차단
+  - key: prodId
+    value: ""
+    disabled: true
+    description: 안심팩
+body:
+  type: json
+  content: |-
+    {
+        "messageId" : "LEGAL_REPRESENTATIVE_MESSAGE_HZD_TEST"
+
+        /*
+        LEGAL_REPRESENTATIVE_MESSAGE <= 안심팩
+        LEGAL_REPRESENTATIVE_MESSAGE_HZD_V2 <= 유해차단
+        LEGAL_REPRESENTATIVE_MESSAGE_HZD_TEST <= 유해차단 (TEST)
+        */
+    }
+auth:
+  type: noauth
+settings: {}
+order: 16000

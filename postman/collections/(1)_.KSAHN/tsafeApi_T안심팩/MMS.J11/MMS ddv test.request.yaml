@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8888/rest/mms/mms-ddv/1
+method: GET
+auth:
+  type: noauth
+settings: {}
+order: 1000

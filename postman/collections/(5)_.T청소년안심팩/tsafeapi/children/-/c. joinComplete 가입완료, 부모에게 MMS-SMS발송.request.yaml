@@ -1,0 +1,19 @@
+$kind: http-request
+name: c. joinComplete 가입완료, 부모에게 MMS/SMS발송
+url: "{{url-was-api}}children/joinComplete"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: |-
+    // appCode 할당 및 디비 저장 -> 부모 getChildren, 자녀 syncData 요청시 자녀 appCode내려줌
+    {
+        "legalGuardianPhoneNumber": "encrypted"
+    }
+settings: {}
+order: 2000

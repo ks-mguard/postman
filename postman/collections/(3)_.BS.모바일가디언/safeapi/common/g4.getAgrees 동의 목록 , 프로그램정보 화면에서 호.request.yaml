@@ -1,0 +1,17 @@
+$kind: http-request
+name: g4.getAgrees 동의 목록 , 프로그램정보 화면에서 호출
+url: "{{url-was-api}}getAgrees"
+method: POST
+headers:
+  - key: prodId
+    value: ""
+    description: 유해차단 -> NA00004907
+body:
+  type: json
+  content: |-
+    {
+      "type" : "guardian",
+      "version" : "2"
+    }
+settings: {}
+order: 24000

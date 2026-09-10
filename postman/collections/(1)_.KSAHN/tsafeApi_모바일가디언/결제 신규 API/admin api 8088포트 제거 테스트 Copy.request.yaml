@@ -1,0 +1,19 @@
+$kind: http-request
+description: 구독정보 조회
+url: https://tsafeapi.sktelecom.com:8443/api/notice/list
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: ""
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "page" : 1
+    }
+auth:
+  type: noauth
+settings: {}
+order: 7000

@@ -1,0 +1,10 @@
+$kind: collection
+scripts:
+  - type: http:beforeRequest
+    code: |-
+      //pm.request.headers.add({
+      //  key: "identifier",
+      //  value: "{{c-identifier}}"
+      //});
+    language: text/javascript
+order: 3000

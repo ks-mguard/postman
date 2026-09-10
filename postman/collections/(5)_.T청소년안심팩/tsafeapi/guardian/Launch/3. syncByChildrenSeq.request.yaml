@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{url-was-api}}guardian/syncByChildrenSeq"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : {{childSeq}},
+      "childrenParam" : {
+        "lastBadMessageReceiveTimestamp" : 0,
+        "lastOffMessageSendTimestamp" : 1667198642162,
+        "lastSafeMessageSendTimestamp" : 1667198642162,
+        "lastTroubleReceiveTimestamp" : 0
+      },
+      "pushToken" : "fLSBCzTiQUKWJ1-4Rs0iE_:APA91bFf_GnwMiUBCWWbOVpDWNTZakpX_ZeM7M8j5vAEXo-f33ubsmYGVP-_l5JXU9Oft1Kwplq083Y47U_050IsP-CHILrEXzC0a16Pb7RsYcogNXoeQaAylcULRqBEZMqTYiI2Ro0Y"
+    }
+settings: {}
+order: 3000

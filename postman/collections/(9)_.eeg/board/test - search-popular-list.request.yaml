@@ -1,0 +1,11 @@
+$kind: http-request
+name: "test : search/popular-list"
+url: "{{url-api}}/api/v1/search/popular-list"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 13000

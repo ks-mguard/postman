@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{url-was-api}}payment/auto-cancel"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: "{} // 호출시 v4 빼야 함다."
+settings: {}
+order: 5000

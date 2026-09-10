@@ -1,0 +1,14 @@
+$kind: http-request
+name: file/upload/{type]
+url: "{{url-api}}/file/upload/board"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: /Users/sms/Downloads/img/original.gif
+auth:
+  type: noauth
+settings: {}
+order: 1000

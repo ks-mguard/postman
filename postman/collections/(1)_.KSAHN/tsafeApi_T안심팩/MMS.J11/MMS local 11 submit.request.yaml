@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{svr-sktApi-kub}}/rest/mms/submit-message"
+method: POST
+body:
+  type: json
+  content: |
+    {
+        "recipient" : "01091931770",
+        "callback": "15990011",
+        "subject": "제목이 한글입니다 2",
+        "content" : "한글 메세지 테스트 1라인.\n한글 메세지 테스트 2라인.\n한글 메세지 테스트 3라인.\n한글 메세지 테스트 4라인.\n한글 메세지 테스트 5라인.\n한글 메세지 테스트 6라인.\nMMS MESSAGE TEST"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 2000

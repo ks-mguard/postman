@@ -1,0 +1,20 @@
+$kind: http-request
+name: --. setAppCode
+url: "{{url-was-api}}guardian/setAppCode"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    // insert, update -> userCode : "1234", "active" : 1
+    // launch 실행시 appCode로 내려줌..
+    {
+        "userCode" : "0251", 
+        "active" : 1
+    }
+settings: {}
+order: 10000

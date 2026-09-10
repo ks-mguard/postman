@@ -1,0 +1,28 @@
+$kind: http-request
+name: api/report/sms-log
+url: "{{svr-https-admin-api}}/api/report/sms-log?month=202604&searchCondition=tran_msg&searchKeyword=자녀"
+method: GET
+headers:
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+    disabled: true
+queryParams:
+  - key: page
+    value: "1"
+    disabled: true
+  - key: size
+    value: "100"
+    disabled: true
+  - key: month
+    value: "202604"
+  - key: searchCondition
+    value: tran_msg
+  - key: searchKeyword
+    value: 자녀
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 10000

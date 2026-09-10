@@ -1,0 +1,11 @@
+$kind: http-request
+name: board/top/categoryNo/topCnt
+url: "{{url-api}}/api/v1/board/top/1/10"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 7000

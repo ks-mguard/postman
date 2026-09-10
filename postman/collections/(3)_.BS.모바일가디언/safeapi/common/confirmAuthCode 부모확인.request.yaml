@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{url-was-api}}confirmAuthCode"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: "1669080917664"
+  fineTree: on
+body:
+  type: json
+  content: |-
+    {
+        "guardianPhoneNumber": "01048551770", 
+        "authCode": "996232"
+    }
+settings: {}
+order: 18000

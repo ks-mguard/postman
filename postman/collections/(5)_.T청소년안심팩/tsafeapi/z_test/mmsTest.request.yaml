@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{url-was-api}}dev/mmsTest"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: |-
+    {
+        "receivePhone--": "01063331770",
+        "legalGuardianPhoneNumber": "01063331770",
+        "childSeq": 803086
+    }
+settings: {}
+order: 2000

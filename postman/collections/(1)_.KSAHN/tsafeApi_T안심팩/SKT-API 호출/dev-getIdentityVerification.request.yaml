@@ -1,0 +1,25 @@
+$kind: http-request
+name: dev/getIdentityVerification
+url: "{{svr-https-tsafe-api}}/v4/dev/getIdentityVerification"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+body:
+  type: json
+  content: |-
+    {
+        "phoneNumber": "01053211770",
+        "birthDay" : "680405"
+    }
+    /*
+        "phoneNumber": "01053211770"
+        "phoneNumber": "01099923652"
+        "phoneNumber": "01047961770"
+
+    */
+auth:
+  type: noauth
+settings: {}
+order: 3000

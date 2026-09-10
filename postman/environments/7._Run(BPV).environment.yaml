@@ -1,0 +1,35 @@
+name: 7._Run(BPV)
+values:
+  - key: url-adm-web
+    value: 'http://223.39.126.156:9099'
+  - key: url-adm-api
+    value: 'https://tsafeapi.sktelecom.com:8443'
+  - key: url-was-api
+    value: 'https://tsafepack.sktelecom.com/tsafeApi/v4/'
+  - key: url-was-api1
+    value: 'https://223.39.122.152/tsafeApi/v4/'
+  - key: url-was-api2
+    value: 'https://223.39.122.153/tsafeApi/v4/'
+  - key: url-was-vip
+    value: 'http://223.39.123.175/tsafeApi/v4/'
+  - key: guardianPhone
+    value: '01094988624'
+  - key: url-was-api-org
+    value: 'https://tsafepack.sktelecom.com/tsafeApi/'
+  - key: svr-https-admin-api
+    value: 'https://tsafeapi.sktelecom.com:8443'
+  - key: refreshGuardianAccessToken
+    value: '0'
+  - key: svr-http-tsafe-api
+    value: 'http://tsafepack.sktelecom.com/tsafeApi'
+  - key: svr-https-tsafe-api
+    value: 'https://tsafepack.sktelecom.com/tsafeApi'
+  - key: guardianSeq
+    value: '501102'
+  - key: childPhone
+    value: '01047961770'
+  - key: childSeq
+    value: '1117272'
+  - key: svr-http-skt-api
+    value: 'http://tsafeapi.sktelecom.com:8888'
+color: 0

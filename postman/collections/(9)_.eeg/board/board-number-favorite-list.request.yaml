@@ -1,0 +1,11 @@
+$kind: http-request
+name: board/number/favorite-list
+url: "{{url-api}}/api/v1/board/7/favorite-list"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 10000

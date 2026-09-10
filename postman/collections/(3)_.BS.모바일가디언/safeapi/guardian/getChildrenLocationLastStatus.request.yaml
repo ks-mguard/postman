@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{url-local-mg-api}}guardian/getChildrenLocationLastStatus"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+        "requestSeq" : 1,
+        "responseSeq" : 1,
+        /*
+        "responseStatus" : 1,
+        "requestType" : "LastLocation",
+        */
+        "isChildrenSend" : true,
+        "gpsProviderStatus" : 1,
+        "networkProviderStatus" : 1,
+        "childSeq": {{childSeq}}
+    }
+settings: {}
+order: 8000

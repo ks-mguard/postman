@@ -1,0 +1,11 @@
+$kind: http-request
+name: "blog: search/searchWord/relation-list"
+url: "{{url-api}}/api/v1/search/검색어/relation-list"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 14000

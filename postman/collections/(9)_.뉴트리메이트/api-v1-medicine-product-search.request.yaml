@@ -1,0 +1,6 @@
+$kind: http-request
+name: api/v1/medicine-product/search
+url: "{{url-was-api}}/api/v1/medicine-product/search"
+method: GET
+settings: {}
+order: 1000

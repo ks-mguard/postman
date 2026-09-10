@@ -1,0 +1,17 @@
+$kind: http-request
+name: board/page-list/categoryNo
+url: "{{url-api}}/api/v1/board/page-list?search=all&categoryNo=1&pageNo=2&pageSize=5&criteria=write_date"
+method: GET
+queryParams:
+  search: all
+  categoryNo: "1"
+  pageNo: "2"
+  pageSize: "5"
+  criteria: write_date
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 6000

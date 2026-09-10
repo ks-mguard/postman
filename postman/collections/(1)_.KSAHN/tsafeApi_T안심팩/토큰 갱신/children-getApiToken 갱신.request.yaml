@@ -1,0 +1,34 @@
+$kind: http-request
+name: children/getApiToken 갱신
+url: "{{svr-https-tsafe-api}}/v4/children/getApiToken"
+method: POST
+headers:
+  deviceId: device-id
+  prodId: NA00004907
+  phoneNumber: "{{childPhone}}"
+  apiToken: "{{json_web_token_1ecn}}"
+body:
+  type: json
+  content: "{}"
+scripts:
+  - type: afterResponse
+    code: |-
+      // Test for successful response (status code 200)
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+
+      // Parse JSON response and save apiToken to environment variable
+      pm.test("Save apiToken to refreshAccessToken environment variable", function () {
+          const jsonData = pm.response.json();
+          
+          pm.expect(jsonData).to.have.property("apiToken");
+          
+          if (jsonData.apiToken) {
+              pm.environment.set("refreshAccessToken", jsonData.apiToken);
+              console.log("refreshAccessToken has been updated with the new apiToken");
+          }
+      });
+    language: text/javascript
+settings: {}
+order: 1000

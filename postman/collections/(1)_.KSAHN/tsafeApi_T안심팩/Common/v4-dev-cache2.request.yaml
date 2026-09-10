@@ -1,0 +1,8 @@
+$kind: http-request
+name: v4/dev/cache2
+url: "{{svr-https-tsafe-api}}/v4/dev/cache2"
+method: GET
+auth:
+  type: noauth
+settings: {}
+order: 4000

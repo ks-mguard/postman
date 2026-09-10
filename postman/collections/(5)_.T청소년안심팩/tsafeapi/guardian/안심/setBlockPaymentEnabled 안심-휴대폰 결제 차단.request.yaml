@@ -1,0 +1,18 @@
+$kind: http-request
+name: setBlockPaymentEnabled 안심>휴대폰 결제 차단
+url: "{{url-was-api}}guardian/setBlockPaymentEnabled"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : {{childSeq}},
+      "enabled" : 1
+    }
+settings: {}
+order: 2000

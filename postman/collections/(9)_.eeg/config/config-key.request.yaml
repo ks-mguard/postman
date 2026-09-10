@@ -1,0 +1,17 @@
+$kind: http-request
+name: config/key
+url: "{{url-api}}/api/v1/config/conf"
+method: GET
+body:
+  type: json
+  content: |-
+    {
+        "key":"rescue",
+        "value":"Y"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 3000

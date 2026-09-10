@@ -1,0 +1,19 @@
+$kind: http-request
+name: setSchoolMealInfo 잠금화면>오늘의급식
+url: "{{url-was-api}}children/setSchoolMealInfo"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "schoolName" : "경기고등학교",
+      "educationOfficeCode" : "B10",
+      "standardSchoolCode" : "7010059"
+    }
+settings: {}
+order: 8000

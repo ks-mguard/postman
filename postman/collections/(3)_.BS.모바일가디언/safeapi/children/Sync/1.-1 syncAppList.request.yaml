@@ -1,0 +1,34 @@
+$kind: http-request
+url: "{{url-was-api}}sync/syncAppList"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: "2222"
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "managedAppList" : [ {
+        "allowStatus" : 0,
+        "appName" : "카메라",
+        "appVersionCode" : 20002000,
+        "childSeq" : 1,
+        "defaultAppStatus" : 0,
+        "deleteStatus" : 0,
+        "packageName" : "com.android.camera2",
+        "syncStatus" : 0
+      }, {
+        "allowStatus" : 0,
+        "appName" : "주소록",
+        "appVersionCode" : 10731,
+        "childSeq" : 1,
+        "defaultAppStatus" : 0,
+        "deleteStatus" : 0,
+        "packageName" : "com.android.contacts",
+        "syncStatus" : 0
+      }]
+    }
+settings: {}
+order: 3000

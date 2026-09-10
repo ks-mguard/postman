@@ -1,0 +1,25 @@
+$kind: http-request
+name: dev/getLegalGuardianPhoneNumber
+url: "{{svr-https-tsafe-api}}/v4/dev/getLegalGuardianPhoneNumber"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+body:
+  type: json
+  content: |
+    {
+        "phoneNumber": "01091931770",
+        "prodId" : ""
+    }
+    /*
+        "phoneNumber": "01091931770"
+        "phoneNumber": "01064064978"
+
+        "prodId" : "NA00004907"
+    */
+auth:
+  type: noauth
+settings: {}
+order: 4000

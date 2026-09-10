@@ -1,0 +1,24 @@
+name: 테스트 서버(정준)
+color: null
+values:
+  - key: url-adm-web
+    value: http://223.39.126.156:9099
+    enabled: true
+  - key: url-adm-api
+    value: http://223.39.126.156:8088
+    enabled: true
+  - key: url-was-api
+    value: http://223.39.126.157:8080/tsafeApi/v4/
+    enabled: true
+  - key: childSeq
+    value: "803247"
+    enabled: true
+  - key: guardianSeq
+    value: "379330"
+    enabled: true
+  - key: childPhone
+    value: "01053211770"
+    enabled: true
+  - key: guardianPhone
+    value: "01048551770"
+    enabled: true

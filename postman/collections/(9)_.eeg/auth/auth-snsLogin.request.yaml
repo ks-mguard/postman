@@ -1,0 +1,23 @@
+$kind: http-request
+name: auth/snsLogin
+url: "{{url-api}}/api/v1/auth/snsLogin/token/6tlEpPQKW22VzD7B9Hh6yFZo-PQ3Iz4vbtEKKiUNAAABjf8WuvIq17LwdM8QAg"
+method: GET
+body:
+  type: json
+  content: |-
+    /*
+    **** -------- 유료화 할 경우 클라이언트에서 jwt sdk사용 accessToken에서 expirationDate 추출후 기간 체크 ---------*******
+
+    방법 1. 클라이언트 로그인 -> sdk를 이용 kakao access Token 취득 -> api서버로 전달 -> api Token 리턴
+    방법 2. 클라이언트 로그인 -> 콜백으로 클라이언트 전달 -> 서버로 인가 코드 전달 -> 서버에서 클라이언트로 api Token url전달 : 앱처리 불가능 할지도??
+    방법 3. 클라이언트 로그인 -> 콜백으로 서버전달 -> 서버에서 클라이언트로 api Token url전달 : 앱처리 불가능
+
+    -. token : kakao sdk로 accessToken 받아서 api호출  --> 방법 1. O
+    -. code  : callback을 경유한 인가 코드 받아서 api호출  --> 방법 2. X
+
+    // 안드로이드 인가코드 받기 : https://developers.kakao.com/docs/latest/ko/kakaologin/android
+    // access code is -> https://kauth.kakao.com/oauth/authorize?client_id=${Javascript KEY}&redirect_uri=${REDIRECT_URI}&response_type=code
+        
+    */
+settings: {}
+order: 3000

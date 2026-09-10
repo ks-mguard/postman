@@ -1,0 +1,10 @@
+name: SCL-run
+color: null
+values:
+  - key: url-api
+    value: http://221.143.20.239:6666
+    enabled: true
+  - key: token
+    value: ""
+    enabled: true
+    secret: true

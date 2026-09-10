@@ -1,0 +1,11 @@
+$kind: http-request
+name: board/search-list/searchWord/preSearchWord
+url: "{{url-api}}/api/v1/board/search-list/검색어/이전검색어"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 15000

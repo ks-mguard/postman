@@ -1,0 +1,24 @@
+$kind: http-request
+name: dev/isSktUser
+url: "{{svr-https-tsafe-api}}/v4/dev/isSktUser"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+body:
+  type: json
+  content: |-
+    {
+        "phoneNumber": "01053211770"
+    }
+    /*
+        "phoneNumber": "01053211770"
+        "phoneNumber": "01099923652"
+        "phoneNumber": "01047961770"
+
+    */
+auth:
+  type: noauth
+settings: {}
+order: 2000

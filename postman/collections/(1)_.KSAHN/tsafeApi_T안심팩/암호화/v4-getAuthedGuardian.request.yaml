@@ -1,0 +1,17 @@
+$kind: http-request
+name: v4/getAuthedGuardian
+url: "{{svr-https-tsafe-api}}/v4/getAuthedGuardian"
+method: POST
+headers:
+  - key: prodId
+    value: NA00004907
+    description: 유해차단
+  - key: phoneNumber
+    value: "01096481770"
+body:
+  type: json
+  content: "{}"
+auth:
+  type: noauth
+settings: {}
+order: 15000

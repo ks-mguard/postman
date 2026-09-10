@@ -1,0 +1,16 @@
+$kind: http-request
+name: v4/guardian/getChildStatus
+url: "{{svr-https-tsafe-api}}/v4/guardian/getChildStatus"
+method: POST
+headers:
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+        "childSeq" : 113
+    }
+auth:
+  type: noauth
+settings: {}
+order: 1000

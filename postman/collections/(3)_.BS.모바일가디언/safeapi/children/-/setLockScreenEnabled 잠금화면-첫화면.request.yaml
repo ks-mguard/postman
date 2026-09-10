@@ -1,0 +1,17 @@
+$kind: http-request
+name: setLockScreenEnabled 잠금화면>첫화면
+url: "{{url-was-api}}children/setLockScreenEnabled"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: |-
+    {
+        "enabled": 1
+    }
+settings: {}
+order: 7000

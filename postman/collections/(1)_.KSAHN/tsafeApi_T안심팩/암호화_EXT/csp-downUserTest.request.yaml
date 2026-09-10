@@ -1,0 +1,38 @@
+$kind: http-request
+name: csp/downUserTest
+url: "{{svr-https-tsafe-api}}/csp/downUserTest"
+method: POST
+headers:
+  - key: fineTree
+    value: off
+    disabled: true
+    description: 암복호 on/off
+  - key: deviceTime
+    value: "1234567890"
+    disabled: true
+  - key: prodId
+    value: NA00004907
+    disabled: true
+    description: 유해차단
+  - key: apiToken
+    value: "{{refreshAccessToken}}"
+    disabled: true
+  - key: apiToken
+    value: "{{json_web_token_00od}}"
+    disabled: true
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+    disabled: true
+  - key: phoneNumber
+    value: "01096481770"
+    disabled: true
+body:
+  type: text
+  content: |-
+    {
+        "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<dow:DownloadRequest xmlns:dow=\"http://sktelecom.com/ecg/download\">\n<dow:SVC_FLAG>I2</dow:SVC_FLAG>\n<dow:PROD_ID>NA00004907</dow:PROD_ID>\n<dow:MDN>01096481770</dow:MDN>\n<dow:MIN>1096481770</dow:MIN>\n<dow:SVC_MGMT_NUM>1234567</dow:SVC_MGMT_NUM>\n<dow:MESG_ID>202609070000000000789001</dow:MESG_ID>\n</dow:DownloadRequest>"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 2000

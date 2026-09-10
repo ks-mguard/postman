@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{url-was-api}}children/syncAppList"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "managedAppList" : [ {
+        "allowStatus" : 0,
+        "appName" : "NIKKE",
+        "appVersionCode" : 1010639,
+        "childSeq" : 11,
+        "defaultAppStatus" : 0,
+        "deleteStatus" : 0,
+        "packageName" : "com.proximabeta.nikke",
+        "syncStatus" : 0
+      } ]
+    }
+settings: {}
+order: 12000

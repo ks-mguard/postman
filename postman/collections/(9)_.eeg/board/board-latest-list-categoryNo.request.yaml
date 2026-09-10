@@ -1,0 +1,11 @@
+$kind: http-request
+name: board/latest-list/categoryNo
+url: "{{url-api}}/api/v1/board/latest-list/1"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 5000

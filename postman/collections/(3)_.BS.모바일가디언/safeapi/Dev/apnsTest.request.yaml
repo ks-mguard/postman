@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{url-was-api}}dev/apnsTest"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: |-
+    {
+    "token":"65C107CB370321F967A38903C599760CDD835DC57C0F47EF74C65EFF5A6E6F3F",
+    "pushAction":"RESPONSE_CHILD_LOCATION",
+    "pushActionStr":"자녀위치 보기 테스트 java 8 run-new"
+    }
+settings: {}
+order: 9000

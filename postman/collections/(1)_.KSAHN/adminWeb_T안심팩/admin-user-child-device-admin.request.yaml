@@ -1,0 +1,17 @@
+$kind: http-request
+name: admin/user/child/device-admin
+url: "{{svr-https-adm-web}}/admin/user/child/device-admin"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        /*
+        "deviceStatus": 0,
+        "phoneNumber": "",
+        "prodId": "",
+        */
+        "childSeq": 113
+    }
+settings: {}
+order: 2000

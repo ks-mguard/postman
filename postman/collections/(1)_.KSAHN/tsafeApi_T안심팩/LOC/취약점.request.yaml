@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{svr-http-tsafe-api-hostonly}}/%"
+method: GET
+auth:
+  type: noauth
+settings: {}
+order: 4000

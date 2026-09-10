@@ -1,0 +1,13 @@
+$kind: http-request
+name: admin/user/child/join-status
+url: "{{svr-https-adm-web}}/admin/user/child/join-status"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "childSeq": 113,
+        "joinStatus": 0
+    }
+settings: {}
+order: 3000

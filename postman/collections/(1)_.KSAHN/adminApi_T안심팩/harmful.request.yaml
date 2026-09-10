@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{svr-https-admin-api}}/harmful"
+method: GET
+headers:
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+    disabled: true
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 1000

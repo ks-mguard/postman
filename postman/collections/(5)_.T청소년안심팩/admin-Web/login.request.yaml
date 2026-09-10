@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:8800/login
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+  Accept-Encoding: gzip, deflate
+body:
+  type: json
+  content: |-
+    {
+        "category": "ansimpack_guardian",
+        "versionCode": "123"
+    }
+settings:
+  followOriginalHttpMethod: false
+  disabledSystemHeaders:
+    - content-type
+    - accept-encoding
+order: 3000

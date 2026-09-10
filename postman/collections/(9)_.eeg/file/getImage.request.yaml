@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{url-api}}/file?fileName=board%2F202402%2F53803df3-2db6-41f6-89c1-b6b5e4c81465.jpg"
+method: GET
+queryParams:
+  fileName: board%2F202402%2F53803df3-2db6-41f6-89c1-b6b5e4c81465.jpg
+settings: {}
+order: 2000

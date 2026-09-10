@@ -1,0 +1,14 @@
+$kind: http-request
+name: v4/launch
+url: "{{svr-tsafeApi}}/v4/launch"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: "{{refreshAccessToken}}"
+body:
+  type: json
+  content: "{}"
+settings: {}
+order: 10000

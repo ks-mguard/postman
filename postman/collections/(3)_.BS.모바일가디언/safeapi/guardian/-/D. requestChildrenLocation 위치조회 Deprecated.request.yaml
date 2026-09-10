@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{url-was-api}}guardian/requestChildrenLocation"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : {{childSeq}},
+      "preSend" : "no",
+      "requestType" : "Search",
+      "responseSeq" : 1668055093406
+    }
+settings: {}
+order: 1000

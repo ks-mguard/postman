@@ -1,0 +1,33 @@
+name: 6._IPV
+values:
+  - key: url-adm-web
+    value: 'http://tsafeopen.sktelecom.com:9099'
+  - key: svr-https-admin-web
+    value: 'https://tsafeopen.sktelecom.com:9099'
+  - key: svr-http-tsafe-api
+    value: ''
+  - key: svr-https-tsafe-api
+    value: 'https://tsafepack.sktelecom.com:443/tsafeApi'
+  - key: svr-https-admin-api
+    value: 'https://tsafeapi.sktelecom.com:8443'
+  - key: svr-http-skt-api
+    value: 'http://tsafepack.sktelecom.com:8888'
+  - key: svr-http-tsafe-api-hostonly
+    value: ''
+  - key: svr-https-tsafe-api-hostonly
+    value: ''
+  - key: childSeq
+    value: '802371'
+  - key: childPhone
+    value: '01047961770'
+  - key: guardianSeq
+    value: '379079'
+  - key: guardianPhone
+    value: '01074251017'
+  - key: refreshAccessToken
+    value: ''
+  - key: unix_time_ms
+    value: ''
+  - key: refreshGuardianAccessToken
+    value: a
+color: 0

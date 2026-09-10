@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{url-was-api}}getAppConfigValue"
+method: POST
+headers:
+  - key: phoneNumber
+    value: "{{childPhone}}"
+    disabled: true
+  - key: deviceId
+    value: device-id
+  - key: prodId
+    value: NA00004907
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+    disabled: true
+body:
+  type: json
+  content: |-
+    {
+        "configKey": "LATEST_APP_VERSION_CODE_GOOGLE"
+    }
+settings: {}
+order: 2000

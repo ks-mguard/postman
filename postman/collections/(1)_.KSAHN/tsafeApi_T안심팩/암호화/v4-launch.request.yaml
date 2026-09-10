@@ -1,0 +1,20 @@
+$kind: http-request
+name: v4/launch
+url: "{{svr-https-tsafe-api}}/v4/launch"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+    disabled: true
+  - key: phoneNumber
+    value: "{{childPhone}}"
+  - key: prodId
+    value: NA00004907
+    description: NA00004907
+body:
+  type: text
+  content: "{}"
+auth:
+  type: noauth
+settings: {}
+order: 8000

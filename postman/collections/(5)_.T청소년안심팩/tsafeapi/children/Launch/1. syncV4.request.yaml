@@ -1,0 +1,47 @@
+$kind: http-request
+url: "{{url-was-api}}children/syncV4"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "accessibilityActiveStatus" : 1,
+      "allBadMessageList" : [ ],
+      "allTroubleList" : [ ],
+      "appUsageLogSummaryList" : [ {
+        "childSeq" : {{childSeq}},
+        "createTimestamp" : 1667378318593,
+        "logDate" : 20221102,
+        "maxLogSeq" : 30,
+        "packageName" : "org.lineageos.eleven",
+        "runCount" : 1,
+        "summarySeq" : 18,
+        "usageTime" : 4
+      } ],
+      "badKeywordVersion" : 110,
+      "badMessageList" : [ ],
+      "deviceAdminActiveStatus" : 1,
+      "lastAppLockScheduleUpdateDttm" : "2022-11-02T18:08:48.914+0900",
+      "lastManagedAppUpdateDttm" : "2022-11-02T18:08:48.914+0900",
+      "locationPermission" : 4,
+      "managedAppList" : [ ],
+      "pushToken" : "dCOnnItgS6SAanpCjjk-wk:APA91bFJhBNotGz1DnTnUr7Qf2pdkGwyIQQO8gnZKHQW5H09QE-r3oVnJv6L0MMAjQfGIbWhNAMI_mvviOAghv6W_-ij4NrVnycNznVeBpPVkQYAbE4vBIXLWYCCV0F6pQT_EmQNiAag",
+      "selfLockEndTime" : 0,
+      "selfLockStartTime" : 0,
+      "storeType" : 2,
+      "syncOnDemand" : false,
+      "troubleList" : [ ],
+      "usageMonitorDate" : "20221102",
+      "usageMonitorUsingTimeWithoutDefaultApp" : 355,
+      "userDefinedBadMessageList" : [ ],
+      "userDefinedKeywordVersion" : 110,
+      "userDefinedTroubleList" : [ ],
+      "whiteKeywordVersion" : 94
+    }
+settings: {}
+order: 2000

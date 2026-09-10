@@ -1,0 +1,18 @@
+$kind: http-request
+name: api/popup
+url: "{{svr-https-admin-api}}/api/popup"
+method: POST
+headers:
+  apiToken: "{{refreshAccessToken}}"
+body:
+  type: json
+  content: |-
+    {
+        // 테스트할때 DB 의 START_DATE,END_DATE 를 확인 !!!
+        //"versionCode": "",
+        "category":"hazard"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 5000

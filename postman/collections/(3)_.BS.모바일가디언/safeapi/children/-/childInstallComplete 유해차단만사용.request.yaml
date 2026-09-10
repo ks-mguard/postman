@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{url-was-api}}children/childInstallComplete"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: "1669345493630"
+body:
+  type: json
+  content: |-
+    {
+        "isLiteChild":true,
+        "legalGuardianPhoneNumber":"LTZvE/x9412E8n9tJFyb7Q=="
+    }
+settings: {}
+order: 3000

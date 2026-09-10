@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{url-was-api}}guardian/getTroubles"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : {{childSeq}},
+      "lastBadMessageReceiveTime" : 0
+    }
+settings: {}
+order: 14000

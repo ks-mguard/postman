@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{url-was-api}}guardian/getPayInfo"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    // return : "isAutoStay": false, -- 정기결제 한적 없음/신청월 선결제만 진행함., true : 마지막 결제 정기결제 했음.
+    // 향후 혹시 파람 받을지 몰라 post로 ..
+    {}
+settings: {}
+order: 6000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:8800/authLogin
+method: POST
+queryParams:
+  - key: userName
+    value: siwon
+    disabled: true
+  - key: password
+    value: bs1770
+    disabled: true
+body:
+  type: urlencoded
+  content:
+    userName: siwon
+    password: bs1770
+settings: {}
+order: 1000

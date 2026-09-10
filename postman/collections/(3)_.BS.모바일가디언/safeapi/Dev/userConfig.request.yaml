@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{url-was-api}}dev/userConfig"
+method: GET
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: |-
+    {
+        "userSeq": 1
+    }
+settings: {}
+order: 16000

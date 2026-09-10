@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{url-was-api}}googleLogin"
+method: POST
+headers:
+  phoneNumber: "01094988624"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: "1696556874856"
+body:
+  type: json
+  content: |-
+    {
+        "id":"azTC1mtFv8M1PXQdyJhUDA==",
+        "password":"r89IVUJXzd\/6zPaxqJi+IA==",
+        "etc": "prodId & deviceTime(encrypted Key) in header !!"
+    }
+settings: {}
+order: 1000

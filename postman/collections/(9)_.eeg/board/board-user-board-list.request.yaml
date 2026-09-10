@@ -1,0 +1,11 @@
+$kind: http-request
+name: board/user-board-list
+url: "{{url-api}}/api/v1/board/user-board-list/3"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 8000

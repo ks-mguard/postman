@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://localhost:8800/admin
+method: GET
+queryParams:
+  - key: userName
+    value: siwon
+    disabled: true
+  - key: password
+    value: bs1770
+    disabled: true
+body:
+  type: json
+  content: |-
+    {
+        "requestUri" : "/admin",
+        "params" : {}
+        /*
+        "userName" : "siwon",
+        "password": "bs1770"
+        */
+    }
+settings: {}
+order: 4000

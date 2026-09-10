@@ -1,0 +1,18 @@
+$kind: http-request
+name: setBlockInAppBrowserEnabled 안심>메세지 내 링크 차단
+url: "{{url-was-api}}guardian/setBlockInAppBrowserEnabled"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : {{childSeq}},
+      "enabled" : 1
+    }
+settings: {}
+order: 3000

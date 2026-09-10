@@ -1,0 +1,19 @@
+$kind: http-request
+name: v4/setAgrees
+url: "{{svr-https-tsafe-api}}/v4/setAgrees"
+method: POST
+headers:
+  - key: phoneNumber
+    value: "01096481770"
+    description: 자녀 MDN 번호
+body:
+  type: json
+  content: |-
+    {
+        "type" : "child",
+        "agrees" : "10,9,7,2"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 10000

@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{url-api}}/api/v1/board"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "categoryNo": "1",
+        "title": "제목임",
+        "content": "내용임",
+        "boardImageList": [
+            "http://localhost:4040/file?fileName=807d2a4c-d1a0-4ced-bb59-bc0444f06130.jpg",
+            "http://localhost:4040/file?fileName=9f05f718-e7db-4140-915a-6abcc7bbc469.png"
+        ]
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 2000

@@ -1,0 +1,21 @@
+$kind: http-request
+name: board/number
+url: "{{url-api}}/api/v1/board/7"
+method: PATCH
+body:
+  type: json
+  content: |-
+    {
+        "title": "제목수정",
+        "content": "내용수정",
+        "boardImageList": [
+            "http://localhost:4040/file/807d2a4c-d1a0-4ced-bb59-bc0444f06130.jpg",
+            "http://localhost:4040/file/9f05f718-e7db-4140-915a-6abcc7bbc469.png"
+        ]
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 3000

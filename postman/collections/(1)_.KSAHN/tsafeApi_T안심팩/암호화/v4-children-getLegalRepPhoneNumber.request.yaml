@@ -1,0 +1,35 @@
+$kind: http-request
+name: v4/children/getLegalRepPhoneNumber
+url: "{{svr-https-tsafe-api}}/v4/children/getLegalRepPhoneNumber"
+method: POST
+headers:
+  - key: apiToken
+    value: "{{refreshAccessToken}}"
+    disabled: true
+  - key: apiToken
+    value: "{{json_web_token_00od}}"
+    disabled: true
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+    disabled: true
+  - key: prodId
+    value: NA00004907
+    disabled: true
+    description: 유해차단
+  - key: deviceTime
+    value: "1234567890"
+    disabled: true
+  - key: phoneNumber
+    value: "01096481770"
+    disabled: true
+body:
+  type: text
+  content: |
+    {
+        "prodId": "NA00004907",
+        "phoneNumber": "01096481770"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 3000

@@ -1,0 +1,29 @@
+$kind: http-request
+name: guardian/setHazardEnabled
+url: "{{svr-tsafeApi}}/v4/guardian/setHazardEnabled"
+method: POST
+headers:
+  - key: phoneNumber
+    value: "{{guardianPhone}}"
+  - key: deviceId
+    value: device-id
+  - key: prodId
+    value: ""
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+    disabled: true
+  - key: apiToken
+    value: ""
+    disabled: true
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : 110,
+      // 0: Off, 1: On
+      "enabled" : 0
+    }
+settings: {}
+order: 9000

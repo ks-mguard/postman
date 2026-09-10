@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{url-was-api}}dev/lastTest"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: |-
+    {
+    "guardianSeq":2,
+    "childSeq":1
+    }
+settings: {}
+order: 6000

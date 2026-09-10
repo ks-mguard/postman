@@ -1,0 +1,31 @@
+$kind: http-request
+name: v4/certifyOneSelfByBirthDayV2
+url: "{{svr-https-tsafe-api}}/v4/certifyOneSelfByBirthDayV2"
+method: POST
+headers:
+  - key: fineTree
+    value: off
+    description: 암복호 on/off
+  - key: deviceTime
+    value: "1234567890"
+  - key: apiToken
+    value: "{{refreshAccessToken}}"
+    disabled: true
+  - key: prodId
+    value: NA00004907
+    disabled: true
+    description: 유해차단
+  - key: phoneNumber
+    value: "01096481770"
+    disabled: true
+body:
+  type: text
+  content: |-
+    {
+        "phoneNumber" : "01096481770",
+        "birthDay" : "130522"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 17000

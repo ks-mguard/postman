@@ -1,0 +1,19 @@
+$kind: http-request
+name: getCspFromSKT 법정대리인 번호 확인(암호화일때 deviceTime=key)
+url: "{{url-was-api}}getCspFromSKT"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: "1669080917664"
+  fineTree: on
+body:
+  type: json
+  content: |-
+    {
+        "childPhone":"QsLmWew+UIDANO6ZY1GgcQ=="
+    }
+settings: {}
+order: 20000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{url-was-api}}setAgrees"
+method: POST
+headers:
+  phoneNumber: "01094988624"
+body:
+  type: json
+  content: |-
+    {
+      "type" : "guardian",
+      "version" : "2"
+    }
+settings: {}
+order: 8000

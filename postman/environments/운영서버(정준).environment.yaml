@@ -1,0 +1,27 @@
+name: 운영서버(정준)
+color: null
+values:
+  - key: url-adm-web
+    value: http://223.39.126.156:9099
+    enabled: true
+  - key: url-adm-api
+    value: http://223.39.126.156:8088
+    enabled: true
+  - key: url-was-api
+    value: https://tsafepack.sktelecom.com/tsafeApi/v4/
+    enabled: true
+  - key: childSeq
+    value: "1069006"
+    enabled: true
+  - key: guardianSeq
+    value: "480553"
+    enabled: true
+  - key: childPhone
+    value: "01053211770"
+    enabled: true
+  - key: guardianPhone
+    value: "01048551770"
+    enabled: true
+  - key: url-was-api-org
+    value: https://tsafepack.sktelecom.com/tsafeApi/
+    enabled: true

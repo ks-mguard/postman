@@ -1,0 +1,6 @@
+$kind: http-request
+name: api/v1/accept-tems/4
+url: "{{url-auth}}api/v1/accept-terms/4"
+method: GET
+settings: {}
+order: 2000

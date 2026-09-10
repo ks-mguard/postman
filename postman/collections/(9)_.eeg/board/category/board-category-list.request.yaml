@@ -1,0 +1,15 @@
+$kind: http-request
+name: board/category-list
+url: "{{url-api}}/api/v1/board/category-list"
+method: GET
+body:
+  type: json
+  content: |-
+    /*
+    메인 화면 진입할때 전체 리스트 받아서  categoryNo : categoryName 으로 인식후 처리
+    1:1 문의 경우 사용자가 post board 하고 답변자가 코멘트 작성후 사용자가 user-board-list 확인시 comment-list 코멘트 불러서 구현하세요
+    */
+auth:
+  type: noauth
+settings: {}
+order: 3000

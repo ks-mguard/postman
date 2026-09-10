@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:8888/rest/mms/msgTest
+method: GET
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: ""
+settings: {}
+order: 3000

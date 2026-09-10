@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{url-was-api}}SnsTest/KAKAO/VlY4a4kQk_j1MriirtgGUjCXLhrpbER4AAAAAQoNIFoAAAGVt31KipQkbXeV0h_w"
+method: GET
+headers:
+  Authorization: "{{accessToken}}"
+auth:
+  type: noauth
+settings: {}
+order: 1000

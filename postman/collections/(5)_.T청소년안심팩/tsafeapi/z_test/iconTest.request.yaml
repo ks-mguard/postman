@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{url-was-api}}dev/iconTest"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: |-
+    {
+        "packages" : [
+            "com.sec.kidsplat.phone",
+            "com.shinhancard.wallet",
+            "aa.bb.cc"
+        ]
+    }
+settings: {}
+order: 1000

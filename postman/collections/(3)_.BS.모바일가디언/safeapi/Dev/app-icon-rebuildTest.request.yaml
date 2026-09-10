@@ -1,0 +1,21 @@
+$kind: http-request
+name: app-icon/rebuildTest
+url: "{{url-was-api}}dev/rebuildTest"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+body:
+  type: json
+  content: |2
+    
+        {
+            "repeat": 10,
+            "limitSize": 500,
+            "packageName": "vn.game.aumobile8"
+        }
+settings: {}
+order: 12000

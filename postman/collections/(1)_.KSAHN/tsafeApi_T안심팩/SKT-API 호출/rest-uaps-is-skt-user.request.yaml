@@ -1,0 +1,18 @@
+$kind: http-request
+name: rest/uaps/is-skt-user
+url: "{{svr-http-skt-api}}/rest/uaps/is-skt-user"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+body:
+  type: json
+  content: |
+    {
+        "phoneNumber": "01047961770"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 8000

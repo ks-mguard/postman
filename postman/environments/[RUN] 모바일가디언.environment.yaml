@@ -1,0 +1,23 @@
+name: '[RUN] 모바일가디언'
+values:
+  - key: url-api
+    value: 'https://mobileguardian.co.kr:4040'
+  - key: url-local-skt
+    value: 'http://localhost:8888'
+  - key: url-tsafeapi
+    value: 'https://mobileguardian.co.kr:5050'
+  - key: url-local-admin
+    value: 'http://localhost:8080'
+  - key: url-was-api
+    value: 'https://mobileguardian.co.kr:5050/v4/'
+  - key: token
+    secret: true
+  - key: guardianSeq
+    value: '73'
+  - key: guardianPhone
+    value: '01048551770'
+  - key: childSeq
+    value: '110'
+  - key: childPhone
+    value: '01053211770'
+color: 0

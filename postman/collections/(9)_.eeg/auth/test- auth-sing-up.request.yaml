@@ -1,0 +1,21 @@
+$kind: http-request
+name: "test: auth/sing-up"
+url: "{{url-api}}/api/v1/auth/sign-up"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        // for test
+        "id": "1004",
+        "password": "hanlimr1!",
+        "email": "e@e.com",
+        "certNum": "1111",
+        "nickname": "천사",
+        "telNo": "01011112222",
+        "address": "",
+        "addressDetail": "",
+        "agreedPersonal": true
+    }
+settings: {}
+order: 1000

@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{url-was-api}}saveDayOff/2023"
+method: GET
+headers:
+  phoneNumber: "01094988624"
+body:
+  type: json
+  content: "{}"
+settings: {}
+order: 10000

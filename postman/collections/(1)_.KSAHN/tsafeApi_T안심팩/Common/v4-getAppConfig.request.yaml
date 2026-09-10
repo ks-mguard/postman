@@ -1,0 +1,23 @@
+$kind: http-request
+name: v4/getAppConfig
+url: "{{svr-https-tsafe-api}}/v4/getAppConfig"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+body:
+  type: json
+  content: |
+    {
+        "configKey":"LATEST_APP_VERSION_NAME"
+    }
+
+    /*
+    LATEST_APP_VERSION_CODE
+    LATEST_APP_VERSION_NAME
+    */
+auth:
+  type: noauth
+settings: {}
+order: 3000

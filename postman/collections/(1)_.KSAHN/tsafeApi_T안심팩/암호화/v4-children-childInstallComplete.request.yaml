@@ -1,0 +1,25 @@
+$kind: http-request
+name: v4/children/childInstallComplete
+url: "{{svr-https-tsafe-api}}/v4/children/childInstallComplete"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  - key: phoneNumber
+    value: "{{childPhone}}"
+    disabled: true
+  - key: prodId
+    value: NA00004907
+    disabled: true
+  - key: deviceTime
+    value: "1234567890"
+body:
+  type: text
+  content: |-
+    {
+        "legalGuardianPhoneNumber" : "01099923652"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 7000

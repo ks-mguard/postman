@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{url-was-api}}children/registerGuardian"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: |-
+    {
+        "guardianPhoneNumber": {{guardianPhone}},
+        "authCode": "123456"
+    }
+settings: {}
+order: 13000

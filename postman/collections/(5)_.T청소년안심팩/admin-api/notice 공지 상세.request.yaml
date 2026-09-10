@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{svr-https-adm-api}}/api/notice"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "seq": 2
+    }
+settings: {}
+order: 2000

@@ -1,0 +1,43 @@
+$kind: http-request
+name: v4/sync/test
+url: "{{svr-https-tsafe-api}}/v4/sync/test"
+method: POST
+headers:
+  - key: fineTree
+    value: off
+    disabled: true
+    description: 암복호 on/off
+  - key: deviceTime
+    value: "1234567890"
+  - key: prodId
+    value: NA00004907
+    description: 유해차단
+  - key: apiToken
+    value: "{{refreshAccessToken}}"
+  - key: apiToken
+    value: "{{json_web_token_00od}}"
+    disabled: true
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+    disabled: true
+  - key: phoneNumber
+    value: "01096481770"
+body:
+  type: text
+  content: |
+    {
+        "pushToken" : "fpt8hG_oRA2LXAP632VCwq:APA91bFh_Hq5TnidM4OZq6SSp0KD0frHTxK-iERN41aFElfwkey4DBYcrv4vem8M7dSZGaEzXLBvxOBrdocl6w8N6uwxKAmUaxnx-0OVECTTkIPXqwKcfcs",
+        "deviceAdminActiveStatus" : "1",
+        "accessibilityActiveStatus" : "1",
+        "lastUsageLogTimestamp" : "1761231234567",
+        "storeType" : "2",
+        "locationPermission" : "4"
+    }
+
+    /*
+        "lastManagedAppUpdateDttm" : 1798038827674,
+    */
+auth:
+  type: noauth
+settings: {}
+order: 1000

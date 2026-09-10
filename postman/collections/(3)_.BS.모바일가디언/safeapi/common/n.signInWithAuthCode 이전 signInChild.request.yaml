@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{url-was-api}}signInWithAuthCode"
+method: POST
+headers:
+  phoneNumber: "01024228624"
+body:
+  type: json
+  content: |-
+    /*
+        자녀용
+        25.03
+        process -> exception
+        1.  phoneNumber null -> "1102", "휴대폰 번호가 유효하지 않습니다."
+        2.  child            -> "1001", "인증코드가 없습니다.\r\n다시 확인하고 입력해주시기 바랍니다."
+                                "5001", "서비스 이용중인 부모가 없거나 인증코드가 일치하지 않습니다\r\n.
+                                         부모폰에 어플리케이션을 설치/인증코드 생성후 자녀모드 서비스를 사용하세요."
+        4.  child joinChildren ,
+                    DB:child insert - unique_identifier 업데이트 , 기존회원 & 번호변경시 반영
+                    테스트번호 예외처리 . setBirthDate(2020-07-07),
+                    DB:sns_map authCode update
+
+        request
+        header || phoneNumber , prodId, appVersionCode, deviceTime ...
+        param  ||
+            authCode String : xykke9 // 부모 설치후 getAuthCode값을 추가
+
+        return 기존 signInChild 동일 
+    */
+    {
+      "authCode" : "fW3PK3"        // 자녀의 경우 부모 설치후 getAuthCode값을 추가
+    }
+settings: {}
+order: 23000

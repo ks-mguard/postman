@@ -1,0 +1,11 @@
+$kind: http-request
+name: board/number/comment-list
+url: "{{url-api}}/api/v1/board/7/comment-list"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 11000

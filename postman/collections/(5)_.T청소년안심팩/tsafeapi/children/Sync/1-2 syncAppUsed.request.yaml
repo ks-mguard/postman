@@ -1,0 +1,63 @@
+$kind: http-request
+url: "{{url-was-api}}sync/syncAppUsed"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: "2222"
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: "1783003739269"
+  fineTree: off
+body:
+  type: json
+  content: |-
+    {
+      "appUsageLogSummaryList": [
+        {
+            "childSeq": 1,
+            "summarySeq": 8,
+            "maxLogSeq": 10,
+            "createTimestamp": 1683003739269,
+            "packageName": "com.a",
+            "logDate": 20230502,
+            "logHour" : 12,
+            "runCount": 5,
+            "usageTime": 50
+        },
+        {
+            "childSeq": 1,
+            "summarySeq": 8,
+            "maxLogSeq": 10,
+            "createTimestamp": 1683003739269,
+            "packageName": "com.a",
+            "logDate": 20230502,
+            "logHour" : 13,
+            "runCount": 15,
+            "usageTime": 150
+        },
+        {
+            "childSeq": 1,
+            "summarySeq": 8,
+            "maxLogSeq": 10,
+            "createTimestamp": 1683003739269,
+            "packageName": "com.b",
+            "logDate": 20230503,
+            "logHour" : 12,
+            "runCount": 1,
+            "usageTime": 10
+        },
+        {
+            "childSeq": 1,
+            "summarySeq": 8,
+            "maxLogSeq": 10,
+            "createTimestamp": 1683003739269,
+            "packageName": "com.b",
+            "logDate": 20230503,
+            "logHour" : 14,
+            "runCount": 10,
+            "usageTime": 100
+        }
+      ]
+    }
+settings: {}
+order: 4000

@@ -1,0 +1,17 @@
+$kind: http-request
+name: -- test loc csp downTest
+url: http://localhost:9999/tsafeApi/csp/downTest
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "BODY": "{\"REQUEST\":{\"SVC_MGMT_NUM\":\"svcMgmtNum\",\"SVC_FLAG\":\"I2\",\"NEW_MDN\":\"mdn\",\"NEW_MIN\":\"mid\",\"MSG_ID\":\"msgId\",\"USER_ID\":\"clientId\",\"PROD_LST\":{\"PROD_ID\":\"NA00003835\"}}}"
+    }
+settings: {}
+order: 10000

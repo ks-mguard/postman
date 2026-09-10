@@ -1,0 +1,30 @@
+$kind: http-request
+name: guardian/setBlockMultitaskingEnabled
+url: "{{svr-https-tsafe-api}}/v4/guardian/setBlockMultitaskingEnabled"
+method: POST
+headers:
+  - key: phoneNumber
+    value: "{{guardianPhone}}"
+  - key: deviceId
+    value: device-id
+  - key: prodId
+    value: ""
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+    disabled: true
+  - key: apiToken
+    value: "{{supabase_service_role_api_key_0hfc}}"
+    disabled: true
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : 113,
+      // 0: Off, 1: On
+     "option": 3,
+      "enabled" : 1
+    }
+settings: {}
+order: 7000

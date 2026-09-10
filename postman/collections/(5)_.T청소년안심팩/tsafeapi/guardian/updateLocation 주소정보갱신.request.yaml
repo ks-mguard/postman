@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{url-was-api}}guardian/updateLocation"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+        "childSeq": {{childSeq}},
+        "requestSeq": 13,
+        "type": "Realtime",
+        "latitude": "37.52",
+        "longitude": "127.05",
+        "time": 122345599,
+        "active": 0
+    }
+settings: {}
+order: 16000

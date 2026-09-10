@@ -1,0 +1,8 @@
+$kind: http-request
+name: v4/dev/geoTest
+url: "{{svr-https-tsafe-api}}/v4/dev/geoTest"
+method: GET
+auth:
+  type: noauth
+settings: {}
+order: 5000

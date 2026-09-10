@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{url-tsafeapi}}/v4/guardian/getAppUsageByDaily"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: ""
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : "123",
+      "statDate" : "20251114"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 3000

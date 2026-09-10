@@ -1,0 +1,18 @@
+$kind: http-request
+name: "adm : config"
+url: "{{url-api}}/api/v1/config"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        // for ADMIN
+        "configKey":"rescue",
+        "configValue":"Y"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 1000

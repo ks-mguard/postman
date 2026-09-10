@@ -1,0 +1,17 @@
+$kind: http-request
+name: v4/children/getAppCode
+url: "{{svr-https-tsafe-api}}/v4/children/getAppCode"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+  - key: phoneNumber
+    value: "01047961770"
+    disabled: true
+body:
+  type: text
+  content: "{}"
+auth:
+  type: noauth
+settings: {}
+order: 6000

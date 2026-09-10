@@ -1,0 +1,22 @@
+$kind: http-request
+name: user/page-user
+url: "{{url-api}}/api/v1/user/page-user?search=all&pageNo=1&pageSize=5&criteria=email&sort=ASC"
+method: GET
+queryParams:
+  search: all
+  pageNo: "1"
+  pageSize: "5"
+  criteria: email
+  sort: ASC
+body:
+  type: json
+  content: |-
+    {
+        /* email | nickname 검색, criteria: email | nickname for ADMIN */
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 1000

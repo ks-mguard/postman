@@ -1,0 +1,21 @@
+$kind: http-request
+name: rest/csp/additional-service-info
+url: "{{svr-http-skt-api}}/rest/csp/additional-service-info"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+body:
+  type: json
+  content: |
+    {
+        "phoneNumber": "01047961770"
+    //    ,"prodId" : "NA00004907"
+    //    ,"prodId" : "NA00003835"
+        ,"prodId" : "NA00003835"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 9000

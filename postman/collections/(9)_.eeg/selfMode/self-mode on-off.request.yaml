@@ -1,0 +1,21 @@
+$kind: http-request
+name: self-mode on/off
+url: "{{url-api}}/api/v1/self-mode"
+method: PATCH
+body:
+  type: json
+  content: |-
+    {
+        // 사용자별 해당 모드 온/오프만 처리합니다. 
+        "userNo": 3,
+        // rescue, sleep, shield
+        "mode": "rescue",
+        // Y/N
+        "isRun": "N"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 5000

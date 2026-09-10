@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{url-was-api}}getServiceMessageById"
+method: POST
+headers:
+  phoneNumber: "01094988624"
+body:
+  type: json
+  content: |-
+    {
+        "type": "guardian", 
+        "messageId": "LEGAL_REPRESENTATIVE_MESSAGE"
+    }
+settings: {}
+order: 9000

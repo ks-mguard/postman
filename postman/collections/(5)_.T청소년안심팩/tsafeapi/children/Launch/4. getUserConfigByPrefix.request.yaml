@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{url-was-api}}getUserConfigByPrefix"
+method: POST
+headers:
+  phoneNumber: "01094988624"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "prefix" : "allByUser",
+      "userType" : 1
+    }
+settings: {}
+order: 5000

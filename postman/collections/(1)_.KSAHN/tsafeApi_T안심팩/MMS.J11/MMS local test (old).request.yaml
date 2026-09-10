@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{url-adm-web}}/rest/mms/mmsTest/1"
+method: GET
+auth:
+  type: noauth
+settings: {}
+order: 4000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{url-was-api}}guardian/getChildren"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+  fineTree: on
+body:
+  type: json
+  content: "{}"
+settings: {}
+order: 3000

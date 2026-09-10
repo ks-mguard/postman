@@ -1,0 +1,27 @@
+$kind: http-request
+name: api/report/app-log
+url: "{{svr-https-admin-api}}/api/report/app-log?searchCondition"
+method: GET
+headers:
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+    disabled: true
+queryParams:
+  - key: page
+    value: "1"
+    disabled: true
+  - key: size
+    value: "20"
+    disabled: true
+  - key: searchCondition
+    value: null
+  - key: searchKeyword
+    value: null
+    disabled: true
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 9000

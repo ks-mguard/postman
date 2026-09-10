@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{url-was-api}}sendAuthCodeV2"
+method: POST
+headers:
+  deviceTime: "1669080917664"
+  fineTree: on
+body:
+  type: json
+  content: |-
+    {
+        "phoneNumber":"QsLmWew+UIDANO6ZY1GgcQ==",
+        "token":"yyyy"
+    }
+settings: {}
+order: 24000

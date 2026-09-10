@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{url-was-api}}certifyOneSelfByBirthDay"
+method: POST
+headers:
+  - key: prodId
+    value: ""
+    description: 유해차단 -> NA00004907
+  - key: fineTree
+    value: on
+  - key: deviceTime
+    value: "1669080917664"
+body:
+  type: json
+  content: |-
+    {
+        "phoneNumber": "QsLmWew+UIDANO6ZY1GgcQ==",
+        "birthDay": "750828"
+    }
+settings: {}
+order: 11000

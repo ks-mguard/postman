@@ -1,0 +1,20 @@
+$kind: http-request
+name: app-icon/bulkRebuild
+url: "{{url-was-api-org}}rest/app-icon/bulkRebuild"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  deviceTime: 123456...
+body:
+  type: json
+  content: |-
+    [
+        {
+            "limitSize": 500,
+            "packageName" : "com.quiet_waters.quietwaters"
+        }
+    ]
+settings: {}
+order: 9000

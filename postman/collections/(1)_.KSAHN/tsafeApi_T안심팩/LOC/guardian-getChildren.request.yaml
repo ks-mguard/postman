@@ -1,0 +1,13 @@
+$kind: http-request
+name: guardian/getChildren
+url: "{{svr-https-tsafe-api}}/v4/guardian/getChildren"
+method: POST
+headers:
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 8000

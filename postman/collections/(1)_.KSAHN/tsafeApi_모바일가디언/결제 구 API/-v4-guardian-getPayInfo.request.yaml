@@ -1,0 +1,20 @@
+$kind: http-request
+name: /v4/guardian/getPayInfo
+url: |
+  {{url-tsafeapi}}/billgate/tsafeApi/v4/userVerify
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: ""
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "guardianSeq" : "60"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 1000

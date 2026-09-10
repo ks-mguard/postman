@@ -1,0 +1,19 @@
+$kind: http-request
+name: auth/refresh
+url: "{{url-api}}/api/v1/auth/refresh"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        // for accessToken refresh
+        "refreshToken": ""
+        /* 
+        code: TE 받을 경우 요청후 리턴되는 accessToken으로 갱신후 이전 api 재요청 
+        react에서는 /apis/index.ts 에서 axios interceptors.response.use로 구현함
+        accessToken : 1hour
+        refreshToken : 15days
+        */
+    }
+settings: {}
+order: 4000

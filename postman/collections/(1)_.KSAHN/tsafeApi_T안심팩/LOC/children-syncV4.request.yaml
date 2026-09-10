@@ -1,0 +1,17 @@
+$kind: http-request
+name: children/syncV4
+url: "{{svr-https-tsafe-api}}/v4/children/syncV4"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: "{{refreshAccessToken}}"
+body:
+  type: json
+  content: |-
+    {
+        "syncOnDemand": true
+    }
+settings: {}
+order: 5000

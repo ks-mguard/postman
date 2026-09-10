@@ -1,0 +1,27 @@
+$kind: http-request
+name: api/sms-auth
+url: "{{svr-https-admin-api}}/api/sms-auth?size=2"
+method: GET
+headers:
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+    disabled: true
+queryParams:
+  - key: guardianPhoneNumber
+    value: "01024228624"
+    disabled: true
+  - key: childPhoneNumber
+    value: "01094988624"
+    disabled: true
+  - key: page
+    value: "1"
+    disabled: true
+  - key: size
+    value: "2"
+body:
+  type: json
+  content: ""
+auth:
+  type: noauth
+settings: {}
+order: 6000

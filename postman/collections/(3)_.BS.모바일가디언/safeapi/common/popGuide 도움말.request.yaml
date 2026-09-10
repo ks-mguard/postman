@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{url-was-api}}popGuide"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "category" : "ansimpack_child",
+        "msgId":""
+    }
+settings: {}
+order: 10000

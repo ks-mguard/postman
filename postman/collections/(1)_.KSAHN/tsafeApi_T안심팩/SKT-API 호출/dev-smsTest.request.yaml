@@ -1,0 +1,23 @@
+$kind: http-request
+name: dev/smsTest
+url: "{{svr-https-tsafe-api}}/v4/dev/smsTest"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+body:
+  type: json
+  content: |
+    {
+        "legalGuardianPhoneNumber": "01047961770",
+        "receivePhone" : "01099923652"
+    }
+    /*
+        "legalGuardianPhoneNumber": "01047961770"
+        "legalGuardianPhoneNumber": "01091931770"
+    */
+auth:
+  type: noauth
+settings: {}
+order: 7000

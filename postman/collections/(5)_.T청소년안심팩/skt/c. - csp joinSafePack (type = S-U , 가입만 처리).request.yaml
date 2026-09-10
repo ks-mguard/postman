@@ -1,0 +1,19 @@
+$kind: http-request
+name: c. -- csp joinSafePack (type = S|U , 가입만 처리)
+url: "{{url-was-api}}dev/joinSafePack"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "phoneNumber" : "01091931770",
+      "prodId" : "",
+      "etc" : "운영기에서 호출하지 말것! 기가입된 경우 오류로 잡힘"
+    }
+settings: {}
+order: 8000

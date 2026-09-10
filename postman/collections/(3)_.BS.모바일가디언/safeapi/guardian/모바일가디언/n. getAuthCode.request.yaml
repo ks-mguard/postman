@@ -1,0 +1,31 @@
+$kind: http-request
+url: "{{url-was-api}}guardian/getAuthCode"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: ""
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+  apiKey: com.skt.thug.guardian
+  user-agent: Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G928S Build/NRD90M)
+  appversion: "128"
+  ostype: Android
+  devicemanufacturer: samsung
+  content-type: application/json;
+  charset: utf-8
+  connection: close
+  networkoperatorname: "45005"
+  osversion: "7.0"
+  devicemodel: SM-G928S
+body:
+  type: json
+  content: |
+    /*
+    hearder : apiToken, prodId, phoneNumber ...
+
+    25.03 리턴된 값은 자녀 sns 로그인 userVerify시 param에 추가
+    return : {"result","123456"}
+    */
+    {}
+settings: {}
+order: 1000

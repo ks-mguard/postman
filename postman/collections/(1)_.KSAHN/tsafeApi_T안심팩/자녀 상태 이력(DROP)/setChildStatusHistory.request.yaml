@@ -1,0 +1,73 @@
+$kind: http-request
+url: "{{svr-https-tsafe-api}}/v4/children/setChildStatusHistory"
+method: POST
+headers:
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+    disabled: true
+  - key: apiToken
+    value: "{{refreshAccessToken}}"
+body:
+  type: json
+  content: |-
+    {
+      "history": [
+        {
+          "eventType": 2,
+          "eventTime": {{unix_time_ms}}, /* 1774892800000 1775182000000 */
+          "valueInt": 0,
+          "valueText": ""
+        },    {
+          "eventType": 3,
+          "eventTime": {{unix_time_ms}}, /* 1774892800000 1775182000000 */
+          "valueInt": 1,
+          "valueText": ""
+        },
+        {
+          "eventType": 4,
+          "eventTime": {{unix_time_ms}},
+          "valueInt": 2,
+          "valueText": ""
+        },
+        {
+          "eventType": 5,
+          "eventTime": {{unix_time_ms}},
+          "valueInt": 66,
+          "valueText": ""
+        },
+        {
+          "eventType": 7,
+          "eventTime": {{unix_time_ms}},
+          "valueInt": 2,
+          "valueText": "A"
+        },
+        {
+          "eventType": 9,
+          "eventTime": {{unix_time_ms}},
+          "valueInt": 1,
+          "valueText": "A"
+        },
+        {
+          "eventType": 11,
+          "eventTime": {{unix_time_ms}},
+          "valueInt": null,
+          "valueText": "98"
+        },
+        {
+          "eventType": 14,
+          "eventTime": {{unix_time_ms}},
+          "valueInt": 1,
+          "valueText": null
+        }
+      ]  
+    }
+auth:
+  type: noauth
+scripts:
+  - type: beforeRequest
+    code: |
+      // Set current Unix time in milliseconds (13 digits) into active environment
+      pm.environment.set('unix_time_ms', Date.now());
+    language: text/javascript
+settings: {}
+order: 1000

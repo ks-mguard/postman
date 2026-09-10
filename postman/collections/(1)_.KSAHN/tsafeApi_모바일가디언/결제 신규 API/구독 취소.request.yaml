@@ -1,0 +1,13 @@
+$kind: http-request
+description: 구독정보 조회
+url: "{{url-tsafeapi}}/v4/guardian/cancelSubscription"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: ""
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+auth:
+  type: noauth
+settings: {}
+order: 5000

@@ -1,0 +1,18 @@
+$kind: http-request
+name: "adm : config"
+url: "{{url-api}}/api/v1/config"
+method: PATCH
+body:
+  type: json
+  content: |-
+    {
+        // for ADMIN
+        "configKey":"conf",
+        "configValue":"NO"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 2000

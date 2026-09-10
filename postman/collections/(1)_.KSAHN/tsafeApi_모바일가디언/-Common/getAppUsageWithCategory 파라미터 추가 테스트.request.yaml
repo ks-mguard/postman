@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{url-was-api}}guardian/getAppUsageWithCategory"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: ""
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      "childSeq" : "62",
+      "statDate" : "20250901"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 1000

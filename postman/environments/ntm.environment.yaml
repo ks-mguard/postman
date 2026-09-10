@@ -1,0 +1,9 @@
+name: ntm
+color: null
+values:
+  - key: url-was-api
+    value: http://221.143.20.239:8888/
+    enabled: true
+  - key: url-auth
+    value: http://221.143.20.239:7777/
+    enabled: true

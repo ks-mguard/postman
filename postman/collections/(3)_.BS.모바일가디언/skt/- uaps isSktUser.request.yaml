@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{url-was-api}}dev/isSktUser"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+      //"phoneNumber" : "01050974654"
+      "phoneNumber" : "01064064978"
+    }
+settings: {}
+order: 3000

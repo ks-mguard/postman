@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{url-local-mg-api}}children/getApiToken"
+method: POST
+headers:
+  - key: phoneNumber
+    value: "{{childPhone}}"
+    disabled: true
+  - key: phoneNumber
+    value: "01053211770"
+  - key: deviceId
+    value: device-id
+  - key: prodId
+    value: ""
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+body:
+  type: json
+  content: "{}"
+settings: {}
+order: 12000

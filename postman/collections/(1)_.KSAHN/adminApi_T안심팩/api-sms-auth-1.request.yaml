@@ -1,0 +1,19 @@
+$kind: http-request
+name: api/sms-auth
+url: "{{svr-https-admin-api}}/api/sms-auth"
+method: POST
+headers:
+  - key: apiToken
+    value: "{{refreshGuardianAccessToken}}"
+    disabled: true
+body:
+  type: json
+  content: |-
+    {
+        "sender": "01094988624",
+        "receiver": ""
+    }
+auth:
+  type: noauth
+settings: {}
+order: 7000

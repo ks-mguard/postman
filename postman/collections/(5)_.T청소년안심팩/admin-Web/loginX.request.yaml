@@ -1,0 +1,20 @@
+$kind: http-request
+url: http://localhost:8800/login
+method: POST
+queryParams:
+  - key: userName
+    value: siwon
+    disabled: true
+  - key: password
+    value: bs1770
+    disabled: true
+  - key: px1
+    value: "111"
+    disabled: true
+body:
+  type: urlencoded
+  content:
+    username: siwon
+    password: bs1770
+settings: {}
+order: 2000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{url-was-api}}sendChildSignInAuthCode"
+method: POST
+headers:
+  deviceTime: "1669080917664"
+  fineTree: on
+body:
+  type: json
+  content: |-
+    {
+        "guardianPhoneNumber":"QsLmWew+UIDANO6ZY1GgcQ=="
+    }
+settings: {}
+order: 20000

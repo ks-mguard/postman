@@ -1,0 +1,13 @@
+$kind: http-request
+name: "blog: board/number/favorite"
+url: "{{url-api}}/api/v1/board/7/favorite"
+method: PUT
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 9000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{url-was-api}}dev/testPushAction?pushAction=REQUEST_CHILD_LOCATION"
+method: GET
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+  deviceTime: 123456...
+queryParams:
+  pushAction: REQUEST_CHILD_LOCATION
+body:
+  type: json
+  content: ""
+settings: {}
+order: 4000

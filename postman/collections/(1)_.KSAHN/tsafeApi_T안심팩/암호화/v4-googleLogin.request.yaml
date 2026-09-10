@@ -1,0 +1,25 @@
+$kind: http-request
+name: v4/googleLogin
+url: "{{svr-https-tsafe-api}}/v4/googleLogin"
+method: POST
+headers:
+  - key: fineTree
+    value: off
+    disabled: true
+    description: 암복호 on/off
+  - key: deviceTime
+    value: "1234567890"
+  - key: prodId
+    value: NA00004907
+    description: 유해차단
+body:
+  type: json
+  content: |
+    {
+        "id" : "child",
+        "password" : "tmp46K"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 19000

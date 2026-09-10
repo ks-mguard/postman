@@ -1,0 +1,52 @@
+$kind: http-request
+name: children/verifyHarmful
+url: "{{svr-BS-http-tsafe-api}}/v4/children/verifyHarmful"
+method: POST
+headers:
+  phoneNumber: "{{childPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+
+        "type": 1, "value": "com.mobions.asked"
+
+
+    /*
+
+        "type": 1, "value": "com.mobions.asked"
+
+        "type": 1, "value": "com.tile.triplematch.mania" // sexual 4
+
+        "type": 1, "value": "com.apollo.tap.master" // sexual 4
+
+        "type": 1, "value": "com.kanoapps.lcn" // nudity 1
+
+        "type": 0, "value": "http://play.google.com/store/apps/details?id=com.mnw.naboda&hl=ko"
+
+        "type": 0, "value": "http://www.google.com/maps/d/viewer?mid=1WZTG54pb1H_3OSR1qOPAYGMDrlg&hl=en_US&ll=36.377093714359155%2C127.37460317102511&z=17"
+
+        "type": 0, "value": "http://www.google.com"
+        "type": 0, "value": "sex.com"
+        "type": 0, "value": "Zombies in Moscow"
+
+    // appGrade HASH 빈도수 (26.01.26 기준)
+    1DFC7BCF4AA2D7497541A6E18BBA5860 : 15198 개 (apps.apple.com:443)
+    02D4B670DB8FDD84241948DCE9AB5ECB : 13969 개 (play.google.com)
+    60409C70B77668D8D994E8BE2BB21B24 : 8478 개 (itunes.apple.com)
+    B12CD7325888F6C8A83134D6239BBD5A : 127 개(play.google.com:443)
+    D4CDCC86BDCC4E24CBE403A1085F6291 : 92 개 (apps.apple.com)
+    F8DF8405EA1874EF7E71850C7D74FB01 : 64 개
+    E04DCB9DC089889190B618DCC698A986 : 21 개
+    0339631A863D409BC3752C38CBD9B9D2 : 1 개
+    E75E857D431D4382D25C6382DCD57057 : 1 개
+    3B5C8684CA76879A3D15C178934F37D6 : 1 개
+
+    */
+
+    }
+settings: {}
+order: 4000

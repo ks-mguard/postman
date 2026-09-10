@@ -1,0 +1,23 @@
+$kind: http-request
+name: -- test vip csp downRun3835
+url: http://223.39.123.175/tsafeApi/csp/downRun3835
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+        "childSeq":{{childSeq}},
+        "exceptApps":[
+          {
+            "packageName":"패키지네임",
+            "timeExcept": 1
+          }
+        ]
+    }
+settings: {}
+order: 13000

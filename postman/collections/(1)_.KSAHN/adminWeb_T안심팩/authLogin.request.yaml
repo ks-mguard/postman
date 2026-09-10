@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{svr-https-adm-web}}/authLogin"
+method: POST
+body:
+  type: urlencoded
+  content:
+    userName: siwon
+    password: test1770!3
+scripts:
+  - type: afterResponse
+    code: |-
+      const setCookieHeader = pm.response.headers.get('Set-Cookie');
+
+      if (setCookieHeader) {
+          const match = setCookieHeader.match(/JSESSIONID=([^;]+)/);
+          if (match) {
+              pm.environment.set('JSESSIONID', match[1]);
+          }
+      }
+    language: text/javascript
+settings: {}
+order: 1000

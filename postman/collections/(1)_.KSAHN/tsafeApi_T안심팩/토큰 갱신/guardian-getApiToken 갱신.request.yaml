@@ -1,0 +1,41 @@
+$kind: http-request
+name: guardian/getApiToken 갱신
+url: "{{svr-https-tsafe-api}}/v4/guardian/getApiToken"
+method: POST
+headers:
+  - key: phoneNumber
+    value: "{{guardianPhone}}"
+  - key: deviceId
+    value: device-id
+  - key: prodId
+    value: ""
+  - key: apiToken
+    value: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{childSeq}}
+    disabled: true
+  - key: apiToken
+    value: ""
+body:
+  type: json
+  content: "{}"
+scripts:
+  - type: afterResponse
+    code: |-
+      // Test for successful response (status code 200)
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+
+      // Parse JSON response and save apiToken to environment variable
+      pm.test("Save apiToken to refreshGuardianAccessToken environment variable", function () {
+          const jsonData = pm.response.json();
+          
+          pm.expect(jsonData).to.have.property("apiToken");
+          
+          if (jsonData.apiToken) {
+              pm.environment.set("refreshGuardianAccessToken", jsonData.apiToken);
+              console.log("refreshGuardianAccessToken has been updated with the new apiToken");
+          }
+      });
+    language: text/javascript
+settings: {}
+order: 2000

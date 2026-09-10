@@ -1,0 +1,22 @@
+name: SCL-loc
+color: null
+values:
+  - key: url-api
+    value: http://localhost:4040
+    enabled: true
+  - key: token
+    value: ""
+    enabled: true
+    secret: true
+  - key: url-was-api
+    value: http://localhost:5050/v4/
+    enabled: true
+  - key: guardianPhone
+    value: "1"
+    enabled: true
+  - key: guardianSeq
+    value: "1"
+    enabled: true
+  - key: url-tsafeapi
+    value: http://localhost:5050
+    enabled: true

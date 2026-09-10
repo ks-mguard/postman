@@ -1,0 +1,43 @@
+$kind: http-request
+url: "{{svr-https-tsafe-api}}/v4/guardian/setLocationSafezone"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: ""
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+body:
+  type: json
+  content: |-
+    {
+       "childSeq":113,
+       "type":"children",
+       "locationSafezones":[
+          {
+             "name":"누구누구",
+             "latitude":"37.5974383",
+             "longitude":"126.7081129",
+             "address":"",
+             "type":"in",
+             "startTime":980,
+             "endTime":1000,
+             "dayOfWeek":62,
+             "safezoneRange":5
+          },
+          {
+             "name":"누구누구",
+             "latitude":"37.5210526",
+             "longitude":"127.0572518",
+             "type":"out",
+             "address":"가나다라",
+             "startTime":508,
+             "endTime":1000,
+             "dayOfWeek":62,
+             "safezoneRange":6
+          }
+       ]
+    }
+auth:
+  type: noauth
+settings: {}
+order: 2000

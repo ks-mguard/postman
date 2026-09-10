@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{url-was-api}}guardian/getManagedApps?page=0&size=20&sort=createDttm,desc&sort=appName,asc"
+method: POST
+headers:
+  phoneNumber: "{{guardianPhone}}"
+  deviceId: device-id
+  prodId: ""
+  apiToken: EpprhhFHhWK6C6WBDDCEubw01iqLU5ck4rdIyj66mX8={{guardianSeq}}
+queryParams:
+  - key: page
+    value: "0"
+  - key: size
+    value: "20"
+  - key: sort
+    value: createDttm,desc
+  - key: sort
+    value: appName,asc
+body:
+  type: json
+  content: |-
+    {
+        "childSeq":{{childSeq}},
+        "status":"all"
+    }
+settings: {}
+order: 5000

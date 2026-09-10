@@ -1,0 +1,13 @@
+$kind: http-request
+name: self-mode/info/userNo
+url: "{{url-api}}/api/v1/self-mode/info/1"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 1000

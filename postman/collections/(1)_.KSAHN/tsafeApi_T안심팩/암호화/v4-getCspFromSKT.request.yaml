@@ -1,0 +1,27 @@
+$kind: http-request
+name: v4/getCspFromSKT
+url: "{{svr-https-tsafe-api}}/v4/getCspFromSKT"
+method: POST
+headers:
+  - key: fineTree
+    value: off
+    description: 암복호 on/off
+  - key: deviceTime
+    value: "1234567890"
+  - key: prodId
+    value: NA00004907
+    description: 유해차단
+  - key: prodId
+    value: ""
+    disabled: true
+    description: 안심팩
+body:
+  type: json
+  content: |-
+    {
+        "childPhone" : "01096481770"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 18000
