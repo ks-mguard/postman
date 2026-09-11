@@ -1,0 +1,17 @@
+name: 99._DDV -> vpn-on
+values:
+  - key: url-adm-web
+    value: 'http://223.62.243.50:9099'
+  - key: url-adm-api
+    value: 'http://223.62.243.50:8088'
+  - key: url-was-api
+    value: 'http://223.62.243.49:8080/tsafeApi/v4/'
+  - key: guardianSeq
+    value: '2'
+  - key: childSeq
+    value: '803395'
+  - key: childPhone
+    value: '01053211760'
+  - key: guardianPhone
+    value: '01094988624'
+color: 0

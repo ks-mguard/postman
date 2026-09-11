@@ -18,11 +18,11 @@ cloudResources:
     ../postman/environments/SCL-run.environment.yaml: 48386858-50be64c5-dbea-4298-81f4-57f58e02b3a4
     ../postman/environments/테스트 서버(정준).environment.yaml: 48386858-55a950c2-f4bf-4557-b2c7-e065c905ba3f
     ../postman/environments/1._KUB 서초 IDC.environment.yaml: 48386858-82e02ef4-2996-4b32-abef-21bbfef0c3db
-    ../postman/environments/[RUN] 모바일가디언.environment.yaml: 48386858-a1af0bca-30f3-44e5-8b7e-6bb17b1899da
     ../postman/environments/sms-100.environment.yaml: 48386858-b2985288-021d-4147-918e-9e416b7368d4
-    ../postman/environments/999._DDV - vpn-on.environment.yaml: 48386858-c405ed55-4c5a-4f22-ba4f-4cd67fd9ae6f
     ../postman/environments/ntm.environment.yaml: 48386858-d5080065-9fea-4794-9a5e-d283cf689cb7
     ../postman/environments/7._Run(BPV).environment.yaml: 48386858-e6c2d267-9cbf-4cc3-9267-334f4a92384c
     ../postman/environments/0._LOCAL 테스트.environment.yaml: 48386858-f3fab031-d937-4eba-934b-caa9a6a0b90e
+    ../postman/environments/99._DDV - vpn-on.environment.yaml: 48386858-c405ed55-4c5a-4f22-ba4f-4cd67fd9ae6f
+    ../postman/environments/999._[RUN] 모바일가디언.environment.yaml: 48386858-a1af0bca-30f3-44e5-8b7e-6bb17b1899da
   globals:
     ../postman/globals/workspace.globals.yaml: deeaa510-155d-4862-8184-f2527c45cfc4

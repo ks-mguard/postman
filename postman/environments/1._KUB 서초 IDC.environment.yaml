@@ -1,49 +1,49 @@
 name: 1._KUB 서초 IDC
 values:
-  - key: svr-http-adm-web
+  - key: '### -- ADMIN_API -- ###'
+    value: ''
+  - key: svr-http-admin-api
     value: 'http://221.143.20.247:7070'
+  - key: svr-https-admin-api
+    value: '{{svr-http-admin-api}}'
+  - key: '### -- SKT_API -- ###'
+    value: ''
+  - key: svr-http-skt-api
+    value: 'http://221.143.20.247:45050'
+  - key: '### -- ADMIN_WEB -- ###'
+    value: ''
+  - key: svr-http-adm-web
+    value: 'http://221.143.20.247:9099'
   - key: svr-https-adm-web
     value: '{{svr-http-adm-web}}'
-  - key: url-adm-api
-    value: 'http://221.143.20.247:6060'
-  - key: url-was-api
-    value: 'http://221.143.20.247:5050/v4'
-  - key: svr-skt-api
-    value: 'http://221.143.20.247:8888'
+  - key: '### -- TSAFE_API -- ###'
+    value: ''
   - key: svr-http-tsafe-api
     value: 'http://221.143.20.247:49099/tsafeApi'
   - key: svr-https-tsafe-api
     value: 'https://221.143.20.247:5050/tsafeApi'
   - key: svr-http-tsafe-api-hostonly
-    value: 'http://221.143.20.247:5050'
+    value: 'http://221.143.20.247:49099'
   - key: svr-https-tsafe-api-hostonly
     value: 'https://221.143.20.247:5050'
-  - key: svr-http-skt-api
-    value: 'http://221.143.20.247:45050'
-  - key: svr-http-admin-api
-    value: 'http://221.143.20.247:7070'
-  - key: svr-https-admin-api
-    value: 'https://221.143.20.247:7070'
+  - key: '### -- ETC_VALUES -- ###'
+    value: ''
   - key: childSeq
     value: '20062'
   - key: guardianSeq
     value: '4'
   - key: childPhone
-    value: '01096481770'
+    value: 01096481770
   - key: guardianPhone
-    value: '01099923652'
-  - key: url-was-api-org
-    value: 'http://223.39.126.157:8080/tsafeApi/'
-  - key: g-identifier
-    value: KAKAO_3969438535
+    value: 01099923652
   - key: c-identifier
     value: NAVER_wY4c3e_USC2NfhPWe-gVjlOTcRlq64iDEtMkV0IO77Y
+  - key: g-identifier
+    value: KAKAO_3969438535
   - key: refreshAccessToken
-    secret: true
-  - key: refreshGudianAccessToken
-    value: ''
+    value: eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJibGFja3N0b25lIiwibXNxIjoyMDA2MiwiZXhwIjoxNzg5MDM1MzI3LCJpYXQiOjE3ODkwMzE3MjcsIm1idCI6MTF9.95GuQBKnFgOrjl3x0jzwheU6T_jNtFMiXl5y227WalgtN69RVExOODTwhGdyjauDxVqrg_ij0pduYgfymptjDA
   - key: refreshGuardianAccessToken
-    value: '{{json_web_token_1boj}}'
+    value: ''
   - key: unix_time_ms
     value: '1775018315677'
   - key: pushToken

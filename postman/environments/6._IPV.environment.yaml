@@ -1,33 +1,47 @@
 name: 6._IPV
 values:
-  - key: url-adm-web
-    value: 'http://tsafeopen.sktelecom.com:9099'
-  - key: svr-https-admin-web
-    value: 'https://tsafeopen.sktelecom.com:9099'
-  - key: svr-http-tsafe-api
+  - key: '### -- ADMIN_API -- ###'
     value: ''
-  - key: svr-https-tsafe-api
-    value: 'https://tsafepack.sktelecom.com:443/tsafeApi'
+  - key: svr-http-admin-api
+    value: '{{svr-https-admin-api}}'
   - key: svr-https-admin-api
     value: 'https://tsafeapi.sktelecom.com:8443'
+  - key: '### -- SKT_API -- ###'
+    value: ''
   - key: svr-http-skt-api
     value: 'http://tsafepack.sktelecom.com:8888'
-  - key: svr-http-tsafe-api-hostonly
+  - key: '### -- ADMIN_WEB -- ###'
     value: ''
+  - key: svr-http-admin-web
+    value: '{{svr-https-admin-web}}'
+  - key: svr-https-admin-web
+    value: 'https://tsafeopen.sktelecom.com:9099'
+  - key: '### -- TSAFE_API -- ###'
+    value: ''
+  - key: svr-http-tsafe-api
+    value: 'http://tsafepack.sktelecom.com:80/tsafeApi'
+  - key: svr-https-tsafe-api
+    value: 'https://tsafepack.sktelecom.com:443/tsafeApi'
+  - key: svr-http-tsafe-api-hostonly
+    value: 'http://tsafepack.sktelecom.com:80'
   - key: svr-https-tsafe-api-hostonly
+    value: 'https://tsafepack.sktelecom.com:443'
+  - key: '### -- ETC_VALUES -- ###'
     value: ''
   - key: childSeq
     value: '802371'
-  - key: childPhone
-    value: '01047961770'
   - key: guardianSeq
     value: '379079'
+  - key: childPhone
+    value: 01047961770
   - key: guardianPhone
     value: '01074251017'
   - key: refreshAccessToken
     value: ''
-  - key: unix_time_ms
-    value: ''
   - key: refreshGuardianAccessToken
     value: a
+  - key: unix_time_ms
+    value: '1775018315677'
+  - key: pushToken
+    value: ''
 color: 0

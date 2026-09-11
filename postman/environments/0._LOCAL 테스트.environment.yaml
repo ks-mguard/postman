@@ -1,49 +1,51 @@
 name: 0._LOCAL 테스트
 values:
-  - key: url-adm-api
-    value: 'http://localhost:7777'
-  - key: url-was-api
-    value: 'http://localhost:5050/api/v1/'
-  - key: url-local-mg-api
-    value: 'http://localhost:5050'
-  - key: svr-tsafeApi
-    value: 'http://localhost:5050/tsafeApi'
-  - key: svr-tsafeApi-kub
-    value: 'https://localhost:5050'
-  - key: svr-sktApi-kub
+  - key: '### -- ADMIN_API -- ###'
+    value: ''
+  - key: svr-http-admin-api
+    value: 'http://localhost:48443'
+  - key: svr-https-admin-api
+    value: '{{svr-http-admin-api}}'
+  - key: '### -- SKT_API -- ###'
+    value: ''
+  - key: svr-http-skt-api
     value: 'http://localhost:9055'
-  - key: svr-admWeb
+  - key: '### -- ADMIN_WEB -- ###'
+    value: ''
+  - key: svr-http-adm-web
     value: 'http://localhost:8800'
+  - key: svr-https-adm-web
+    value: '{{svr-http-adm-web}}'
+  - key: '### -- TSAFE_API -- ###'
+    value: ''
+  - key: svr-http-tsafe-api
+    value: 'http://localhost:5050/tsafeApi'
+  - key: svr-https-tsafe-api
+    value: '{{svr-http-tsafe-api}}'
   - key: svr-BS-tsafeApi
     value: 'http://localhost:5050'
+  - key: '### -- ETC_VALUES -- ###'
+    value: ''
   - key: childSeq
     value: '20062'
   - key: guardianSeq
     value: '4'
   - key: childPhone
-    value: '01096481770'
-  - key: childPhone_A
-    value: '01053211770'
+    value: 01096481770
   - key: guardianPhone
-    value: '01048551770'
-  - key: url-was-api-org
-    value: 'http://localhost:9999/tsafeApi/'
-  - key: accessToken
-    secret: true
-  - key: g-identifier
-    value: KAKAO_3969438535
+    value: 01099923652
   - key: c-identifier
     value: NAVER_wY4c3e_USC2NfhPWe-gVjlOTcRlq64iDEtMkV0IO77Y
-  - key: refreshAccessToken
-    secret: true
-  - key: refreshGuardianAccessToken
-    secret: true
-  - key: svr-https-tsafe-api
-    value: 'http://localhost:5050/tsafeApi'
-  - key: unix_time_ms
-    value: '1774943137499'
-  - key: svr-https-admin-api
+  - key: g-identifier
+    value: KAKAO_3969438535
+  - key: accessToken
     value: ''
+  - key: refreshAccessToken
+    value: ''
+  - key: refreshGuardianAccessToken
+    value: ''
+  - key: unix_time_ms
+    value: '1775018315677'
   - key: pushToken
     value: 'fpt8hG_oRA2LXAP632VCwq:APA91bFh_Hq5TnidM4OZq6SSp0KD0frHTxK-iERN41aFElfwkey4DBYcrv4vem8M7dSZGaEzXLBvxOBrdocl6w8N6uwxKAmUaxnx-0OVECTTkIPXqwKcfcs'
 color: 0

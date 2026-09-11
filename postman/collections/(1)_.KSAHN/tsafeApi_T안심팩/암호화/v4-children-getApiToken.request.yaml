@@ -27,7 +27,7 @@ scripts:
           pm.expect(jsonData).to.have.property("apiToken");
           
           if (jsonData.apiToken) {
-              pm.environment.set("refreshAccessToken", jsonData.apiToken);
+              pm.environment.set("refreshAccessToken", jsonData.apiToken.toString());
               console.log("refreshAccessToken has been updated with the new apiToken");
           }
       });

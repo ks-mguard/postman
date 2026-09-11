@@ -1,35 +1,47 @@
 name: 4._DDV (223.62.243.49)
 values:
-  - key: url-adm-web
-    value: 'http://223.62.243.50:9099'
-  - key: url-adm-api
+  - key: '### -- ADMIN_API -- ###'
+    value: ''
+  - key: svr-http-admin-api
     value: 'http://223.62.243.50:8088'
-  - key: url-was-api
-    value: 'http://223.62.243.49:8080/tsafeApi/v4/'
+  - key: svr-https-admin-api
+    value: '{{svr-http-admin-api}}'
+  - key: '### -- SKT_API -- ###'
+    value: ''
+  - key: svr-http-skt-api
+    value: 'http://223.62.243.49:8888'
+  - key: '### -- ADMIN_WEB -- ###'
+    value: ''
+  - key: svr-http-adm-web
+    value: '{{svr-https-adm-web}}'
+  - key: svr-https-adm-web
+    value: 'https://223.62.243.50:9099'
+  - key: '### -- TSAFE_API -- ###'
+    value: ''
   - key: svr-http-tsafe-api
     value: 'http://223.62.243.49:8080/tsafeApi'
   - key: svr-https-tsafe-api
-    value: '{{svr-http-tsafe-api}}'
-  - key: svr-http-skt-api
-    value: 'http://223.62.243.49:8888'
-  - key: svr-https-admin-api
-    value: 'http://223.62.243.50:8088'
+    value: 'https://223.62.243.49:8443/tsafeApi'
   - key: svr-http-tsafe-api-hostonly
     value: 'http://223.62.243.49:8080'
   - key: svr-https-tsafe-api-hostonly
     value: 'https://223.62.243.49:8443'
-  - key: guardianSeq
-    value: '2'
+  - key: '### -- ETC_VALUES -- ###'
+    value: ''
   - key: childSeq
     value: '803445'
+  - key: guardianSeq
+    value: '2'
   - key: childPhone
-    value: '01071788097'
+    value: 01071788097
   - key: guardianPhone
-    value: '01094988624'
+    value: 01094988624
   - key: refreshAccessToken
     value: ''
-  - key: unix_time_ms
-    value: ''
   - key: refreshGuardianAccessToken
+    value: ''
+  - key: unix_time_ms
+    value: '1775018315677'
+  - key: pushToken
     value: ''
 color: 0
